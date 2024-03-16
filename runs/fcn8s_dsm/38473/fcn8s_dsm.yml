@@ -1,0 +1,29 @@
+model:
+  arch: fcn8s
+
+data:
+  dataset: dsm
+  train_split: training
+  val_split: val
+  img_rows: 500
+  img_cols: 500
+  path: /home/myid/das59179/Datasets/dense_semantic_mapping/full_images
+
+training:
+  n_workers: 4
+  train_iters: 20250
+  batch_size: 10
+  val_interval: 5000
+  print_interval: 100
+  optimizer:
+    name: 'sgd'
+    lr: 1.0e-10
+    weight_decay: 0.0005
+    momentum: 0.99
+  loss: 
+    name: 'cross_entropy'
+  lr_schedule:
+  augmentations:
+    vflip: 0.2
+    hflip: 0.3
+  resume: /home/myid/das59179/checkpoints/fcn8s_dsm_best_model.pkl
