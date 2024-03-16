@@ -1,3 +1,7 @@
+Submodule for my [CURO Deep Learning Project](https://github.com/dsSarcos/curo-deep-learning-project)
+
+
+
 # pytorch-semseg
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/meetshah1995/pytorch-semseg/blob/master/LICENSE)
