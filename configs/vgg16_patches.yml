@@ -1,0 +1,26 @@
+model:
+  arch: vgg16
+
+data:
+  dataset: patches
+  train_split: training
+  val_split: val
+  img_rows: 256
+  img_cols: 256
+  path: /home/myid/das59179/Datasets/dense_semantic_mapping/patch_images/patch_images_256_new
+
+training:
+  n_workers: 1
+  train_iters: 320000
+  batch_size: 10
+  val_interval: 5000
+  print_interval: 50
+  optimizer:
+    name: 'sgd'
+    lr: 1.0e-4
+    weight_decay: 0.0005
+    momentum: 0.95
+  loss: 
+    name: 'cross_entropy_1d'
+  lr_schedule:
+  resume: /home/myid/das59179/checkpoints/vgg16_patches_best_model.pkl

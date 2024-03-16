@@ -1,0 +1,26 @@
+model:
+  arch: vit_base
+
+data:
+  dataset: patches
+  train_split: training
+  val_split: val
+  img_rows: 384
+  img_cols: 384
+  path: /home/myid/das59179/Datasets/dense_semantic_mapping/patch_images/patch_images_256_new
+
+training:
+  n_workers: 1
+  train_iters: 45000
+  batch_size: 25
+  val_interval: 8000
+  print_interval: 80
+  optimizer:
+    name: 'sgd'
+    lr: 1.0e-4
+    weight_decay: 0.0005
+    momentum: 0.95
+  loss: 
+    name: 'cross_entropy_1d'
+  lr_schedule:
+  resume: /home/myid/das59179/checkpoints/vit_base_patches_best_model.pkl

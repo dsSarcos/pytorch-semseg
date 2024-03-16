@@ -1,0 +1,27 @@
+model:
+  arch: fcn8s
+
+data:
+  dataset: sunrgbd
+  train_split: training
+  val_split: val
+  img_rows: 530
+  img_cols: 730
+  path: /home/myid/das59179/Datasets/sunrgbd/
+
+training:
+  n_workers: 16
+  train_iters: 240000
+  batch_size: 1
+  val_interval: 1000
+  print_interval: 50
+  optimizer:
+    name: 'sgd'
+    lr: 1.0e-12
+    weight_decay: 0.0005
+    momentum: 0.99
+  loss:
+    name: cross_entropy
+    size_average: False
+  lr_schedule:
+  resume: fcn8s_sun_best_model.pkl

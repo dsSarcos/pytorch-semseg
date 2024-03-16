@@ -1,0 +1,17 @@
+name: pytorch-semseg
+channels:
+  - defaults
+  - pytorch
+dependencies:
+  - python=3.7
+  - pip
+  - numpy=1.12.1
+  - pytorch
+  - torchvision
+  - pip:
+    - matplotlib==2.0.0
+    - scipy==0.19.0
+    - tqdm==4.11.2
+    - pydensecrf
+    - protobuf
+    - tensorboardX

@@ -1,0 +1,26 @@
+model:
+  arch: crfrnn
+
+data:
+  dataset: dsm
+  train_split: training
+  val_split: val
+  img_rows: 500
+  img_cols: 500
+  path: /home/myid/das59179/Datasets/dense_semantic_mapping/full_images
+
+training:
+  n_workers: 16
+  train_iters: 10
+  batch_size: 1
+  val_interval: 5
+  print_interval: 1
+  optimizer:
+    name: 'sgd'
+    lr: 1.0e-12
+    weight_decay: 0.0005
+    momentum: 0.99
+  loss: 
+    name: 'cross_entropy'
+  lr_schedule:
+  resume: crfrnn_dsm_best_model.pkl

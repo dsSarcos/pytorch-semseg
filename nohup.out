@@ -1,0 +1,554 @@
+INFO:ptsemseg:Using cross_entropy with {} params
+INFO:ptsemseg:Using loss functools.partial(<function cross_entropy2d at 0x7fa0da44daf0>)
+INFO:ptsemseg:No checkpoint found at '/home/myid/das59179/checkpoints/dpt_base_dsm_best_model.pkl'
+/home/myid/das59179/pytorch-semseg/env/lib64/python3.8/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='mean' instead.
+  warnings.warn(warning.format(ret))
+INFO:ptsemseg:Iter [100/20000]  Loss: 2.7661  Time/Image: 0.1329
+INFO:ptsemseg:Iter [200/20000]  Loss: 2.2347  Time/Image: 0.1131
+INFO:ptsemseg:Iter [300/20000]  Loss: 2.3791  Time/Image: 0.1125
+INFO:ptsemseg:Iter [400/20000]  Loss: 1.7237  Time/Image: 0.1152
+INFO:ptsemseg:Iter [500/20000]  Loss: 1.4425  Time/Image: 0.1167
+INFO:ptsemseg:Iter [600/20000]  Loss: 0.5800  Time/Image: 0.1143
+INFO:ptsemseg:Iter [700/20000]  Loss: 0.8094  Time/Image: 0.1165
+INFO:ptsemseg:Iter [800/20000]  Loss: 0.8853  Time/Image: 0.1144
+INFO:ptsemseg:Iter [900/20000]  Loss: 3.6780  Time/Image: 0.1144
+INFO:ptsemseg:Iter [1000/20000]  Loss: 0.9560  Time/Image: 0.1172
+RUNDIR: runs/dpt_base_dsm/44159
+Iter [100/20000]  Loss: 2.7661  Time/Image: 0.1329
+Iter [200/20000]  Loss: 2.2347  Time/Image: 0.1131
+Iter [300/20000]  Loss: 2.3791  Time/Image: 0.1125
+Iter [400/20000]  Loss: 1.7237  Time/Image: 0.1152
+Iter [500/20000]  Loss: 1.4425  Time/Image: 0.1167
+Iter [600/20000]  Loss: 0.5800  Time/Image: 0.1143
+Iter [700/20000]  Loss: 0.8094  Time/Image: 0.1165
+Iter [800/20000]  Loss: 0.8853  Time/Image: 0.1144
+Iter [900/20000]  Loss: 3.6780  Time/Image: 0.1144
+Iter [1000/20000]  Loss: 0.9560  Time/Image: 0.1172
+0it [00:00, ?it/s]2it [00:00,  9.77it/s]3it [00:00,  9.79it/s]4it [00:00,  9.77it/s]5it [00:00,  9.42it/s]6it [00:00,  9.59it/s]8it [00:00, 10.23it/s]10it [00:00, 10.33it/s]12it [00:01, 10.06it/s]14it [00:01,  9.78it/s]16it [00:01, 10.02it/s]18it [00:01, 10.23it/s]20it [00:01, 10.25it/s]22it [00:02, 10.30it/s]24it [00:02, 10.41it/s]26it [00:02, 10.42it/s]28it [00:02, 10.25it/s]30it [00:02, 10.18it/s]32it [00:03, 10.34it/s]34it [00:03, 10.25it/s]36it [00:03, 10.28it/s]38it [00:03, 10.41it/s]40it [00:03, 10.45it/s]42it [00:04, 10.48it/s]44it [00:04, 10.50it/s]46it [00:04, 10.43it/s]48it [00:04, 10.37it/s]50it [00:04, 10.52it/s]52it [00:05, 10.59it/s]54it [00:05, 10.53it/s]56it [00:05, 10.61it/s]58it [00:05, 10.70it/s]60it [00:05, 10.72it/s]62it [00:05, 10.74it/s]64it [00:06, 10.85it/s]66it [00:06, 10.65it/s]68it [00:06, 10.75it/s]70it [00:06, 10.72it/s]72it [00:06, 10.49it/s]74it [00:07, 10.50it/s]76it [00:07, 10.65it/s]78it [00:07, 10.60it/s]80it [00:07, 10.67it/s]82it [00:07, 10.80it/s]84it [00:08, 10.60it/s]86it [00:08, 10.63it/s]88it [00:08, 10.63it/s]90it [00:08, 10.64it/s]92it [00:08, 10.73it/s]94it [00:08, 10.74it/s]96it [00:09, 10.73it/s]98it [00:09, 10.02it/s]100it [00:09, 10.17it/s]102it [00:09, 10.14it/s]104it [00:09, 10.08it/s]106it [00:10, 10.27it/s]108it [00:10,  9.95it/s]109it [00:10,  9.92it/s]111it [00:10, 10.01it/s]113it [00:10, 10.19it/s]115it [00:11, 10.08it/s]117it [00:11, 10.33it/s]119it [00:11, 10.39it/s]121it [00:11,  9.98it/s]123it [00:11,  9.83it/s]124it [00:11,  9.85it/s]126it [00:12,  9.87it/s]127it [00:12,  9.86it/s]129it [00:12, 10.10it/s]131it [00:12, 10.26it/s]133it [00:12, 10.09it/s]135it [00:13,  8.27it/s]137it [00:13,  8.86it/s]139it [00:13,  9.26it/s]140it [00:13,  9.36it/s]142it [00:13,  9.90it/s]144it [00:14, 10.12it/s]146it [00:14, 10.06it/s]148it [00:14, 10.31it/s]150it [00:14, 10.32it/s]152it [00:14, 10.35it/s]154it [00:15, 10.50it/s]156it [00:15, 10.63it/s]158it [00:15, 10.60it/s]160it [00:15, 10.53it/s]162it [00:15, 10.25it/s]164it [00:15, 10.42it/s]166it [00:16, 10.57it/s]168it [00:16, 10.65it/s]170it [00:16, 10.76it/s]172it [00:16, 10.60it/s]174it [00:16, 10.23it/s]176it [00:17, 10.40it/s]178it [00:17, 10.37it/s]180it [00:17, 10.49it/s]182it [00:17, 10.50it/s]184it [00:17, 10.67it/s]186it [00:18, 10.40it/s]188it [00:18, 10.34it/s]190it [00:18, 10.30it/s]192it [00:18, 10.39it/s]194it [00:18, 10.42it/s]196it [00:19, 10.60it/s]198it [00:19, 10.77it/s]200it [00:19, 10.82it/s]202it [00:19, 10.76it/s]204it [00:19, 10.78it/s]206it [00:19, 10.87it/s]208it [00:20, 10.75it/s]210it [00:20,  9.55it/s]212it [00:20,  9.77it/s]213it [00:20,  9.81it/s]214it [00:20,  9.52it/s]215it [00:20,  9.46it/s]217it [00:21,  9.77it/s]219it [00:21, 10.05it/s]220it [00:21,  9.94it/s]222it [00:21, 10.04it/s]224it [00:21, 10.17it/s]226it [00:21, 10.43it/s]228it [00:22, 10.38it/s]230it [00:22, 10.47it/s]232it [00:22, 10.49it/s]234it [00:22, 10.51it/s]236it [00:22, 10.54it/s]238it [00:23, 10.60it/s]240it [00:23, 10.49it/s]242it [00:23, 10.50it/s]244it [00:23, 10.47it/s]246it [00:23, 10.42it/s]248it [00:24, 10.43it/s]250it [00:24, 10.54it/s]252it [00:24, 10.61it/s]254it [00:24, 10.59it/s]256it [00:24, 10.57it/s]258it [00:25, 10.63it/s]260it [00:25,  8.49it/s]262it [00:25,  8.96it/s]264it [00:25,  9.37it/s]266it [00:25,  9.86it/s]268it [00:26, 10.12it/s]270it [00:26, 10.38it/s]272it [00:26, 10.55it/s]274it [00:26, 10.41it/s]276it [00:26, 10.46it/s]278it [00:27, 10.70it/s]280it [00:27, 10.57it/s]282it [00:27, 10.64it/s]284it [00:27, 10.70it/s]286it [00:27, 10.82it/s]288it [00:27, 10.85it/s]290it [00:28, 10.81it/s]292it [00:28, 10.70it/s]294it [00:28, 10.63it/s]296it [00:28, 10.68it/s]298it [00:28, 10.78it/s]300it [00:29, 10.75it/s]300it [00:29, 10.32it/s]
+INFO:ptsemseg:Iter 1000 Loss: 1.6770
+INFO:ptsemseg:Overall Acc: 	: 0.5584042209222156
+INFO:ptsemseg:Mean Acc : 	: 0.27152517426828543
+INFO:ptsemseg:FreqW Acc : 	: 0.38581804866718783
+INFO:ptsemseg:Mean IoU : 	: 0.16021760373691016
+INFO:ptsemseg:0: 0.00408289856057645
+INFO:ptsemseg:1: 0.27819068911572375
+INFO:ptsemseg:2: 0.0012719453106056417
+INFO:ptsemseg:3: 0.4793970619752127
+INFO:ptsemseg:4: 0.028789430923028013
+INFO:ptsemseg:5: 0.0059055913674298305
+INFO:ptsemseg:6: 0.19184930554523202
+INFO:ptsemseg:7: 0.0
+INFO:ptsemseg:8: 0.0
+INFO:ptsemseg:9: 0.08837389824726803
+INFO:ptsemseg:10: 0.0
+INFO:ptsemseg:11: 0.0
+INFO:ptsemseg:12: 0.6826615453192895
+INFO:ptsemseg:13: 1.8303620456126222e-05
+INFO:ptsemseg:14: 1.0230964012584086e-05
+INFO:ptsemseg:15: 3.769186609529663e-05
+INFO:ptsemseg:16: 0.0
+INFO:ptsemseg:17: 0.5204347592144203
+INFO:ptsemseg:18: 0.0
+INFO:ptsemseg:19: 0.18965097408410597
+INFO:ptsemseg:20: 0.0
+INFO:ptsemseg:21: 0.6434209112761358
+INFO:ptsemseg:22: 0.5709096485593421
+INFO:ptsemseg:Iter [1100/20000]  Loss: 0.4925  Time/Image: 0.1155
+INFO:ptsemseg:Iter [1200/20000]  Loss: 1.3405  Time/Image: 0.1162
+INFO:ptsemseg:Iter [1300/20000]  Loss: 1.4052  Time/Image: 0.1158
+INFO:ptsemseg:Iter [1400/20000]  Loss: 2.6515  Time/Image: 0.1144
+INFO:ptsemseg:Iter [1500/20000]  Loss: 0.1558  Time/Image: 0.1159
+INFO:ptsemseg:Iter [1600/20000]  Loss: 0.5027  Time/Image: 0.1156
+INFO:ptsemseg:Iter [1700/20000]  Loss: 0.7588  Time/Image: 0.1172
+INFO:ptsemseg:Iter [1800/20000]  Loss: 2.5187  Time/Image: 0.1162
+INFO:ptsemseg:Iter [1900/20000]  Loss: 0.7540  Time/Image: 0.1169
+INFO:ptsemseg:Iter [2000/20000]  Loss: 1.3019  Time/Image: 0.1160
+Overall Acc: 	 0.5584042209222156
+Mean Acc : 	 0.27152517426828543
+FreqW Acc : 	 0.38581804866718783
+Mean IoU : 	 0.16021760373691016
+Iter [1100/20000]  Loss: 0.4925  Time/Image: 0.1155
+Iter [1200/20000]  Loss: 1.3405  Time/Image: 0.1162
+Iter [1300/20000]  Loss: 1.4052  Time/Image: 0.1158
+Iter [1400/20000]  Loss: 2.6515  Time/Image: 0.1144
+Iter [1500/20000]  Loss: 0.1558  Time/Image: 0.1159
+Iter [1600/20000]  Loss: 0.5027  Time/Image: 0.1156
+Iter [1700/20000]  Loss: 0.7588  Time/Image: 0.1172
+Iter [1800/20000]  Loss: 2.5187  Time/Image: 0.1162
+Iter [1900/20000]  Loss: 0.7540  Time/Image: 0.1169
+Iter [2000/20000]  Loss: 1.3019  Time/Image: 0.1160
+0it [00:00, ?it/s]2it [00:00, 10.83it/s]4it [00:00, 10.95it/s]6it [00:00, 10.73it/s]8it [00:00, 10.56it/s]10it [00:00, 10.76it/s]12it [00:01, 10.71it/s]14it [00:01, 10.59it/s]16it [00:01, 10.76it/s]18it [00:01, 10.94it/s]20it [00:01, 10.87it/s]22it [00:02, 11.00it/s]24it [00:02, 10.86it/s]26it [00:02, 10.83it/s]28it [00:02, 10.95it/s]30it [00:02, 10.82it/s]32it [00:02, 10.80it/s]34it [00:03, 10.71it/s]36it [00:03, 10.70it/s]38it [00:03, 10.60it/s]40it [00:03, 10.46it/s]42it [00:03, 10.56it/s]44it [00:04, 10.57it/s]46it [00:04, 10.57it/s]48it [00:04, 10.69it/s]50it [00:04, 10.87it/s]52it [00:04, 10.75it/s]54it [00:05, 10.24it/s]56it [00:05, 10.29it/s]58it [00:05, 10.52it/s]60it [00:05, 10.31it/s]62it [00:05, 10.50it/s]64it [00:06, 10.59it/s]66it [00:06, 10.40it/s]68it [00:06, 10.49it/s]70it [00:06, 10.55it/s]72it [00:06, 10.23it/s]74it [00:07,  9.43it/s]75it [00:07,  9.49it/s]77it [00:07,  9.79it/s]79it [00:07, 10.06it/s]81it [00:07, 10.13it/s]83it [00:07, 10.20it/s]85it [00:08, 10.37it/s]87it [00:08, 10.11it/s]89it [00:08, 10.22it/s]91it [00:08, 10.29it/s]93it [00:08, 10.04it/s]95it [00:09, 10.14it/s]97it [00:09, 10.20it/s]99it [00:09, 10.37it/s]101it [00:09, 10.51it/s]103it [00:09, 10.55it/s]105it [00:10, 10.61it/s]107it [00:10, 10.68it/s]109it [00:10, 10.65it/s]111it [00:10, 10.39it/s]113it [00:10, 10.51it/s]115it [00:10, 10.59it/s]117it [00:11, 10.62it/s]119it [00:11, 10.78it/s]121it [00:11, 10.89it/s]123it [00:11, 10.84it/s]125it [00:11, 10.96it/s]127it [00:12, 10.81it/s]129it [00:12, 10.39it/s]131it [00:12, 10.63it/s]133it [00:12, 10.69it/s]135it [00:12, 10.63it/s]137it [00:13, 10.75it/s]139it [00:13, 10.78it/s]141it [00:13, 10.71it/s]143it [00:13, 10.71it/s]145it [00:13, 10.81it/s]147it [00:13, 10.77it/s]149it [00:14, 10.70it/s]151it [00:14, 10.69it/s]153it [00:14, 10.72it/s]155it [00:14, 10.60it/s]157it [00:14, 10.68it/s]159it [00:15, 10.69it/s]161it [00:15, 10.57it/s]163it [00:15, 10.52it/s]165it [00:15, 10.70it/s]167it [00:15, 10.44it/s]169it [00:16, 10.49it/s]171it [00:16, 10.65it/s]173it [00:16, 10.55it/s]175it [00:16, 10.24it/s]177it [00:16, 10.04it/s]179it [00:17, 10.29it/s]181it [00:17, 10.54it/s]183it [00:17, 10.51it/s]185it [00:17, 10.38it/s]187it [00:17, 10.50it/s]189it [00:17, 10.30it/s]191it [00:18, 10.16it/s]193it [00:18, 10.23it/s]195it [00:18, 10.32it/s]197it [00:18, 10.46it/s]199it [00:18, 10.51it/s]201it [00:19, 10.63it/s]203it [00:19, 10.52it/s]205it [00:19, 10.60it/s]207it [00:19, 10.56it/s]209it [00:19, 10.74it/s]211it [00:20, 10.70it/s]213it [00:20, 10.39it/s]215it [00:20, 10.55it/s]217it [00:20, 10.49it/s]219it [00:20, 10.29it/s]221it [00:21, 10.27it/s]223it [00:21, 10.52it/s]225it [00:21, 10.51it/s]227it [00:21, 10.55it/s]229it [00:21, 10.71it/s]231it [00:21, 10.80it/s]233it [00:22, 10.76it/s]235it [00:22, 10.71it/s]237it [00:22, 10.73it/s]239it [00:22, 10.76it/s]241it [00:22, 10.78it/s]243it [00:23, 10.73it/s]245it [00:23, 10.72it/s]247it [00:23, 10.69it/s]249it [00:23, 10.74it/s]251it [00:23, 10.67it/s]253it [00:24, 10.55it/s]255it [00:24, 10.66it/s]257it [00:24, 10.88it/s]259it [00:24, 10.88it/s]261it [00:24, 10.97it/s]263it [00:24, 10.73it/s]265it [00:25, 10.54it/s]267it [00:25, 10.69it/s]269it [00:25, 10.74it/s]271it [00:25, 10.51it/s]273it [00:25, 10.48it/s]275it [00:26, 10.65it/s]277it [00:26, 10.54it/s]279it [00:26, 10.68it/s]281it [00:26, 10.88it/s]283it [00:26,  8.74it/s]285it [00:27,  8.94it/s]287it [00:27,  9.25it/s]289it [00:27,  9.71it/s]291it [00:27, 10.06it/s]293it [00:27, 10.06it/s]295it [00:28, 10.31it/s]297it [00:28, 10.67it/s]299it [00:28, 10.60it/s]300it [00:28, 10.51it/s]
+INFO:ptsemseg:Iter 2000 Loss: 1.2203
+INFO:ptsemseg:Overall Acc: 	: 0.6998999710751522
+INFO:ptsemseg:Mean Acc : 	: 0.44779219705520495
+INFO:ptsemseg:FreqW Acc : 	: 0.5454158583066417
+INFO:ptsemseg:Mean IoU : 	: 0.3220353902363327
+INFO:ptsemseg:0: 0.29629549787042714
+INFO:ptsemseg:1: 0.728682519822221
+INFO:ptsemseg:2: 0.20136434420492721
+INFO:ptsemseg:3: 0.6931121430213364
+INFO:ptsemseg:4: 0.5594051489792655
+INFO:ptsemseg:5: 0.20348964120072305
+INFO:ptsemseg:6: 0.3523143153117954
+INFO:ptsemseg:7: 0.0014855103789230442
+INFO:ptsemseg:8: 0.0
+INFO:ptsemseg:9: 0.3765914978919579
+INFO:ptsemseg:10: 0.0
+INFO:ptsemseg:11: 0.0
+INFO:ptsemseg:12: 0.7284052848597202
+INFO:ptsemseg:13: 0.0017834557184323789
+INFO:ptsemseg:14: 0.003060318885227841
+INFO:ptsemseg:15: 0.42469978229827476
+INFO:ptsemseg:16: 0.0
+INFO:ptsemseg:17: 0.8818461775618096
+INFO:ptsemseg:18: 0.0
+INFO:ptsemseg:19: 0.4018113841476497
+INFO:ptsemseg:20: 0.0
+INFO:ptsemseg:21: 0.8606664340473938
+INFO:ptsemseg:22: 0.6918005192355668
+INFO:ptsemseg:Iter [2100/20000]  Loss: 1.0490  Time/Image: 0.1155
+INFO:ptsemseg:Iter [2200/20000]  Loss: 0.1101  Time/Image: 0.1155
+INFO:ptsemseg:Iter [2300/20000]  Loss: 1.1092  Time/Image: 0.1145
+INFO:ptsemseg:Iter [2400/20000]  Loss: 0.7507  Time/Image: 0.1165
+INFO:ptsemseg:Iter [2500/20000]  Loss: 1.9046  Time/Image: 0.1153
+INFO:ptsemseg:Iter [2600/20000]  Loss: 0.0202  Time/Image: 0.1150
+INFO:ptsemseg:Iter [2700/20000]  Loss: 1.0088  Time/Image: 0.1173
+INFO:ptsemseg:Iter [2800/20000]  Loss: 0.2403  Time/Image: 0.1173
+INFO:ptsemseg:Iter [2900/20000]  Loss: 2.2219  Time/Image: 0.1174
+INFO:ptsemseg:Iter [3000/20000]  Loss: 0.1318  Time/Image: 0.1194
+Overall Acc: 	 0.6998999710751522
+Mean Acc : 	 0.44779219705520495
+FreqW Acc : 	 0.5454158583066417
+Mean IoU : 	 0.3220353902363327
+Iter [2100/20000]  Loss: 1.0490  Time/Image: 0.1155
+Iter [2200/20000]  Loss: 0.1101  Time/Image: 0.1155
+Iter [2300/20000]  Loss: 1.1092  Time/Image: 0.1145
+Iter [2400/20000]  Loss: 0.7507  Time/Image: 0.1165
+Iter [2500/20000]  Loss: 1.9046  Time/Image: 0.1153
+Iter [2600/20000]  Loss: 0.0202  Time/Image: 0.1150
+Iter [2700/20000]  Loss: 1.0088  Time/Image: 0.1173
+Iter [2800/20000]  Loss: 0.2403  Time/Image: 0.1173
+Iter [2900/20000]  Loss: 2.2219  Time/Image: 0.1174
+Iter [3000/20000]  Loss: 0.1318  Time/Image: 0.1194
+0it [00:00, ?it/s]2it [00:00, 11.35it/s]4it [00:00, 10.67it/s]6it [00:00, 10.84it/s]8it [00:00, 11.14it/s]10it [00:00, 11.09it/s]12it [00:01, 11.10it/s]14it [00:01, 11.29it/s]16it [00:01, 10.97it/s]18it [00:01, 11.15it/s]20it [00:01, 11.09it/s]22it [00:01, 10.98it/s]24it [00:02, 10.86it/s]26it [00:02, 11.02it/s]28it [00:02, 11.02it/s]30it [00:02, 11.06it/s]32it [00:02, 11.00it/s]34it [00:03,  9.87it/s]36it [00:03,  7.27it/s]37it [00:03,  6.83it/s]38it [00:03,  6.75it/s]40it [00:04,  7.93it/s]42it [00:04,  8.57it/s]44it [00:04,  9.11it/s]46it [00:04,  9.76it/s]48it [00:04, 10.11it/s]50it [00:05, 10.30it/s]52it [00:05, 10.60it/s]54it [00:05, 10.57it/s]56it [00:05, 10.80it/s]58it [00:05, 10.93it/s]60it [00:05, 10.83it/s]62it [00:06, 10.80it/s]64it [00:06, 10.94it/s]66it [00:06, 10.86it/s]68it [00:06, 10.99it/s]70it [00:06, 11.08it/s]72it [00:07, 10.95it/s]74it [00:07, 10.90it/s]76it [00:07, 10.92it/s]78it [00:07, 10.49it/s]80it [00:07, 10.44it/s]82it [00:07, 10.59it/s]84it [00:08, 10.25it/s]86it [00:08,  9.85it/s]87it [00:08,  9.60it/s]89it [00:08,  9.83it/s]91it [00:08, 10.13it/s]93it [00:09, 10.24it/s]95it [00:09, 10.16it/s]97it [00:09, 10.34it/s]99it [00:09, 10.30it/s]101it [00:09, 10.32it/s]103it [00:10, 10.35it/s]105it [00:10, 10.21it/s]107it [00:10, 10.20it/s]109it [00:10, 10.46it/s]111it [00:10, 10.54it/s]113it [00:11, 10.19it/s]115it [00:11, 10.30it/s]117it [00:11, 10.51it/s]119it [00:11, 10.24it/s]121it [00:11, 10.25it/s]123it [00:12, 10.52it/s]125it [00:12, 10.50it/s]127it [00:12, 10.35it/s]129it [00:12, 10.59it/s]131it [00:12, 10.67it/s]133it [00:12, 10.56it/s]135it [00:13, 10.62it/s]137it [00:13, 10.65it/s]139it [00:13, 10.73it/s]141it [00:13, 10.70it/s]143it [00:13, 10.72it/s]145it [00:14,  8.81it/s]147it [00:14,  9.24it/s]149it [00:14,  9.66it/s]151it [00:14, 10.09it/s]153it [00:14, 10.36it/s]155it [00:15, 10.27it/s]157it [00:15, 10.26it/s]159it [00:15, 10.43it/s]161it [00:15, 10.21it/s]163it [00:15, 10.26it/s]165it [00:16, 10.50it/s]167it [00:16, 10.48it/s]169it [00:16, 10.24it/s]171it [00:16, 10.26it/s]173it [00:16, 10.40it/s]175it [00:17, 10.13it/s]177it [00:17,  9.90it/s]179it [00:17, 10.09it/s]181it [00:17, 10.40it/s]183it [00:17, 10.21it/s]185it [00:18, 10.12it/s]187it [00:18, 10.35it/s]189it [00:18, 10.47it/s]191it [00:18, 10.52it/s]193it [00:18, 10.62it/s]195it [00:19, 10.42it/s]197it [00:19, 10.00it/s]199it [00:19, 10.13it/s]201it [00:19, 10.21it/s]203it [00:19, 10.22it/s]205it [00:20, 10.23it/s]207it [00:20, 10.35it/s]209it [00:20, 10.41it/s]211it [00:20, 10.40it/s]213it [00:20, 10.39it/s]215it [00:20, 10.29it/s]217it [00:21, 10.37it/s]219it [00:21, 10.31it/s]221it [00:21, 10.26it/s]223it [00:21, 10.38it/s]225it [00:21, 10.40it/s]227it [00:22, 10.50it/s]229it [00:22, 10.42it/s]231it [00:22, 10.31it/s]233it [00:22, 10.43it/s]235it [00:22, 10.48it/s]237it [00:23, 10.53it/s]239it [00:23, 10.50it/s]241it [00:23, 10.44it/s]243it [00:23, 10.49it/s]245it [00:23, 10.49it/s]247it [00:24, 10.49it/s]249it [00:24, 10.21it/s]251it [00:24, 10.43it/s]253it [00:24, 10.29it/s]255it [00:24, 10.40it/s]257it [00:24, 10.56it/s]259it [00:25, 10.61it/s]261it [00:25, 10.62it/s]263it [00:25, 10.77it/s]265it [00:25, 10.60it/s]267it [00:25, 10.57it/s]269it [00:26, 10.72it/s]271it [00:26,  8.83it/s]272it [00:26,  8.99it/s]274it [00:26,  9.46it/s]276it [00:26,  9.88it/s]278it [00:27,  9.98it/s]280it [00:27, 10.01it/s]282it [00:27, 10.07it/s]284it [00:27, 10.28it/s]286it [00:27, 10.54it/s]288it [00:28, 10.59it/s]290it [00:28, 10.63it/s]292it [00:28, 10.69it/s]294it [00:28, 10.49it/s]296it [00:28, 10.50it/s]298it [00:28, 10.66it/s]300it [00:29, 10.66it/s]300it [00:29, 10.28it/s]
+INFO:ptsemseg:Iter 3000 Loss: 1.0996
+INFO:ptsemseg:Overall Acc: 	: 0.7449494178713448
+INFO:ptsemseg:Mean Acc : 	: 0.548506223494347
+INFO:ptsemseg:FreqW Acc : 	: 0.6015686853409951
+INFO:ptsemseg:Mean IoU : 	: 0.4197470982984901
+INFO:ptsemseg:0: 0.5092257293786049
+INFO:ptsemseg:1: 0.6530857364541575
+INFO:ptsemseg:2: 0.29356239410289914
+INFO:ptsemseg:3: 0.6272286675942988
+INFO:ptsemseg:4: 0.5262849897590949
+INFO:ptsemseg:5: 0.6030487278467743
+INFO:ptsemseg:6: 0.39594509839812003
+INFO:ptsemseg:7: 0.7832988108937476
+INFO:ptsemseg:8: 0.16380317300725977
+INFO:ptsemseg:9: 0.49731058757658547
+INFO:ptsemseg:10: 0.0
+INFO:ptsemseg:11: 0.0
+INFO:ptsemseg:12: 0.7917514895650175
+INFO:ptsemseg:13: 0.13643335971843962
+INFO:ptsemseg:14: 0.02175795626759039
+INFO:ptsemseg:15: 0.39575432750070455
+INFO:ptsemseg:16: 0.1980829554901947
+INFO:ptsemseg:17: 0.7625324060991043
+INFO:ptsemseg:18: 0.0
+INFO:ptsemseg:19: 0.5624772315800906
+INFO:ptsemseg:20: 0.08715496558439603
+INFO:ptsemseg:21: 0.92970649086204
+INFO:ptsemseg:22: 0.7157381631861527
+INFO:ptsemseg:Iter [3100/20000]  Loss: 1.2998  Time/Image: 0.1146
+INFO:ptsemseg:Iter [3200/20000]  Loss: 2.2752  Time/Image: 0.1144
+INFO:ptsemseg:Iter [3300/20000]  Loss: 1.1404  Time/Image: 0.1162
+INFO:ptsemseg:Iter [3400/20000]  Loss: 2.0312  Time/Image: 0.1151
+INFO:ptsemseg:Iter [3500/20000]  Loss: 0.9816  Time/Image: 0.1162
+INFO:ptsemseg:Iter [3600/20000]  Loss: 3.8541  Time/Image: 0.1153
+INFO:ptsemseg:Iter [3700/20000]  Loss: 0.3291  Time/Image: 0.1173
+INFO:ptsemseg:Iter [3800/20000]  Loss: 1.8293  Time/Image: 0.1161
+INFO:ptsemseg:Iter [3900/20000]  Loss: 0.2732  Time/Image: 0.1160
+INFO:ptsemseg:Iter [4000/20000]  Loss: 0.9256  Time/Image: 0.1163
+Overall Acc: 	 0.7449494178713448
+Mean Acc : 	 0.548506223494347
+FreqW Acc : 	 0.6015686853409951
+Mean IoU : 	 0.4197470982984901
+Iter [3100/20000]  Loss: 1.2998  Time/Image: 0.1146
+Iter [3200/20000]  Loss: 2.2752  Time/Image: 0.1144
+Iter [3300/20000]  Loss: 1.1404  Time/Image: 0.1162
+Iter [3400/20000]  Loss: 2.0312  Time/Image: 0.1151
+Iter [3500/20000]  Loss: 0.9816  Time/Image: 0.1162
+Iter [3600/20000]  Loss: 3.8541  Time/Image: 0.1153
+Iter [3700/20000]  Loss: 0.3291  Time/Image: 0.1173
+Iter [3800/20000]  Loss: 1.8293  Time/Image: 0.1161
+Iter [3900/20000]  Loss: 0.2732  Time/Image: 0.1160
+Iter [4000/20000]  Loss: 0.9256  Time/Image: 0.1163
+0it [00:00, ?it/s]2it [00:00, 10.70it/s]4it [00:00, 10.60it/s]6it [00:00, 10.56it/s]8it [00:00, 10.39it/s]10it [00:00, 10.45it/s]12it [00:01, 10.67it/s]14it [00:01, 10.57it/s]16it [00:01, 10.68it/s]18it [00:01, 10.68it/s]20it [00:01, 10.45it/s]22it [00:02, 10.28it/s]24it [00:02, 10.28it/s]26it [00:02, 10.60it/s]28it [00:02, 10.38it/s]30it [00:02, 10.53it/s]32it [00:03, 10.58it/s]34it [00:03, 10.36it/s]36it [00:03, 10.39it/s]38it [00:03, 10.39it/s]40it [00:03, 10.46it/s]42it [00:04, 10.56it/s]44it [00:04, 10.41it/s]46it [00:04, 10.41it/s]48it [00:04, 10.56it/s]50it [00:04, 10.53it/s]52it [00:04, 10.43it/s]54it [00:05, 10.78it/s]56it [00:05, 10.52it/s]58it [00:05, 10.32it/s]60it [00:05, 10.65it/s]62it [00:05, 10.73it/s]64it [00:06, 10.72it/s]66it [00:06, 10.80it/s]68it [00:06, 10.79it/s]70it [00:06, 10.86it/s]72it [00:06, 10.84it/s]74it [00:06, 10.83it/s]76it [00:07, 10.63it/s]78it [00:07, 10.72it/s]80it [00:07, 10.82it/s]82it [00:07, 10.52it/s]84it [00:07, 10.58it/s]86it [00:08, 10.69it/s]88it [00:08, 10.66it/s]90it [00:08, 10.63it/s]92it [00:08, 10.89it/s]94it [00:08, 10.74it/s]96it [00:09, 10.64it/s]98it [00:09, 10.82it/s]100it [00:09, 10.67it/s]102it [00:09, 10.71it/s]104it [00:09, 10.86it/s]106it [00:09, 10.65it/s]108it [00:10, 10.50it/s]110it [00:10, 10.63it/s]112it [00:10, 10.71it/s]114it [00:10, 10.70it/s]116it [00:10, 10.64it/s]118it [00:11,  8.72it/s]120it [00:11,  9.32it/s]122it [00:11,  9.64it/s]124it [00:11,  9.96it/s]126it [00:11, 10.28it/s]128it [00:12, 10.27it/s]130it [00:12, 10.36it/s]132it [00:12, 10.62it/s]134it [00:12, 10.58it/s]136it [00:12, 10.53it/s]138it [00:13, 10.67it/s]140it [00:13, 10.60it/s]142it [00:13, 10.62it/s]144it [00:13, 10.58it/s]146it [00:13, 10.67it/s]148it [00:14, 10.74it/s]150it [00:14, 10.60it/s]152it [00:14, 10.76it/s]154it [00:14, 10.82it/s]156it [00:14, 10.67it/s]158it [00:14, 10.75it/s]160it [00:15, 10.70it/s]162it [00:15, 10.54it/s]164it [00:15, 10.67it/s]166it [00:15, 10.67it/s]168it [00:15, 10.47it/s]170it [00:16, 10.28it/s]172it [00:16, 10.42it/s]174it [00:16, 10.23it/s]176it [00:16, 10.17it/s]178it [00:16, 10.45it/s]180it [00:17, 10.52it/s]182it [00:17, 10.20it/s]184it [00:17, 10.45it/s]186it [00:17, 10.47it/s]188it [00:17, 10.58it/s]190it [00:18, 10.63it/s]192it [00:18, 10.65it/s]194it [00:18, 10.61it/s]196it [00:18, 10.59it/s]198it [00:18, 10.61it/s]200it [00:19, 10.58it/s]202it [00:19, 10.57it/s]204it [00:19, 10.60it/s]206it [00:19, 10.59it/s]208it [00:19, 10.66it/s]210it [00:19, 10.68it/s]212it [00:20, 10.70it/s]214it [00:20, 10.77it/s]216it [00:20, 10.61it/s]218it [00:20, 10.44it/s]220it [00:20, 10.48it/s]222it [00:21, 10.75it/s]224it [00:21, 10.61it/s]226it [00:21, 10.78it/s]228it [00:21, 10.71it/s]230it [00:21, 10.36it/s]232it [00:22, 10.47it/s]234it [00:22, 10.61it/s]236it [00:22, 10.49it/s]238it [00:22, 10.40it/s]240it [00:22, 10.54it/s]242it [00:22, 10.52it/s]244it [00:23, 10.53it/s]246it [00:23, 10.59it/s]248it [00:23, 10.52it/s]250it [00:23, 10.72it/s]252it [00:23, 10.74it/s]254it [00:24, 10.70it/s]256it [00:24, 10.78it/s]258it [00:24, 10.75it/s]260it [00:24, 10.63it/s]262it [00:24, 10.79it/s]264it [00:25, 10.67it/s]266it [00:25, 10.39it/s]268it [00:25, 10.44it/s]270it [00:25, 10.55it/s]272it [00:25, 10.45it/s]274it [00:25, 10.45it/s]276it [00:26, 10.49it/s]278it [00:26, 10.55it/s]280it [00:26, 10.45it/s]282it [00:26, 10.44it/s]284it [00:26,  9.95it/s]286it [00:27,  9.94it/s]288it [00:27, 10.14it/s]290it [00:27,  9.99it/s]292it [00:27,  9.97it/s]294it [00:27, 10.07it/s]296it [00:28, 10.09it/s]298it [00:28,  8.42it/s]300it [00:28,  8.99it/s]300it [00:28, 10.46it/s]
+INFO:ptsemseg:Iter 4000 Loss: 1.0250
+INFO:ptsemseg:Overall Acc: 	: 0.7719923706264422
+INFO:ptsemseg:Mean Acc : 	: 0.6354966602302419
+INFO:ptsemseg:FreqW Acc : 	: 0.6323998091397007
+INFO:ptsemseg:Mean IoU : 	: 0.4964041729722844
+INFO:ptsemseg:0: 0.5105357232767735
+INFO:ptsemseg:1: 0.6579811245426893
+INFO:ptsemseg:2: 0.5100900650845672
+INFO:ptsemseg:3: 0.7186613224850444
+INFO:ptsemseg:4: 0.4101177656600834
+INFO:ptsemseg:5: 0.694017513637045
+INFO:ptsemseg:6: 0.41037030718109957
+INFO:ptsemseg:7: 0.8301955077697939
+INFO:ptsemseg:8: 0.4502590646968507
+INFO:ptsemseg:9: 0.573456131692484
+INFO:ptsemseg:10: 0.000453196165960436
+INFO:ptsemseg:11: 0.0
+INFO:ptsemseg:12: 0.7588521556957162
+INFO:ptsemseg:13: 0.2729910382163418
+INFO:ptsemseg:14: 0.02198575164577509
+INFO:ptsemseg:15: 0.4688031915419394
+INFO:ptsemseg:16: 0.7099099218791518
+INFO:ptsemseg:17: 0.9445437610792297
+INFO:ptsemseg:18: 0.0011999297010882191
+INFO:ptsemseg:19: 0.5336587364011407
+INFO:ptsemseg:20: 0.4477979143644204
+INFO:ptsemseg:21: 0.7778735705510738
+INFO:ptsemseg:22: 0.713542285094274
+INFO:ptsemseg:Iter [4100/20000]  Loss: 0.1005  Time/Image: 0.1157
+INFO:ptsemseg:Iter [4200/20000]  Loss: 2.3030  Time/Image: 0.1144
+INFO:ptsemseg:Iter [4300/20000]  Loss: 0.2009  Time/Image: 0.1155
+INFO:ptsemseg:Iter [4400/20000]  Loss: 0.3729  Time/Image: 0.1142
+INFO:ptsemseg:Iter [4500/20000]  Loss: 0.7827  Time/Image: 0.1149
+INFO:ptsemseg:Iter [4600/20000]  Loss: 0.3051  Time/Image: 0.1135
+INFO:ptsemseg:Iter [4700/20000]  Loss: 0.3745  Time/Image: 0.1160
+INFO:ptsemseg:Iter [4800/20000]  Loss: 0.0989  Time/Image: 0.1146
+INFO:ptsemseg:Iter [4900/20000]  Loss: 0.3846  Time/Image: 0.1164
+INFO:ptsemseg:Iter [5000/20000]  Loss: 0.1079  Time/Image: 0.1178
+Overall Acc: 	 0.7719923706264422
+Mean Acc : 	 0.6354966602302419
+FreqW Acc : 	 0.6323998091397007
+Mean IoU : 	 0.4964041729722844
+Iter [4100/20000]  Loss: 0.1005  Time/Image: 0.1157
+Iter [4200/20000]  Loss: 2.3030  Time/Image: 0.1144
+Iter [4300/20000]  Loss: 0.2009  Time/Image: 0.1155
+Iter [4400/20000]  Loss: 0.3729  Time/Image: 0.1142
+Iter [4500/20000]  Loss: 0.7827  Time/Image: 0.1149
+Iter [4600/20000]  Loss: 0.3051  Time/Image: 0.1135
+Iter [4700/20000]  Loss: 0.3745  Time/Image: 0.1160
+Iter [4800/20000]  Loss: 0.0989  Time/Image: 0.1146
+Iter [4900/20000]  Loss: 0.3846  Time/Image: 0.1164
+Iter [5000/20000]  Loss: 0.1079  Time/Image: 0.1178
+0it [00:00, ?it/s]2it [00:00, 10.64it/s]4it [00:00, 10.87it/s]6it [00:00, 10.68it/s]8it [00:00, 10.71it/s]10it [00:00, 10.81it/s]12it [00:01, 10.68it/s]14it [00:01, 10.48it/s]16it [00:01, 10.55it/s]18it [00:01, 10.79it/s]20it [00:01, 10.64it/s]22it [00:02, 10.39it/s]24it [00:02, 10.47it/s]26it [00:02, 10.56it/s]28it [00:02, 10.46it/s]30it [00:02, 10.58it/s]32it [00:03, 10.62it/s]34it [00:03, 10.34it/s]36it [00:03, 10.13it/s]38it [00:03, 10.34it/s]40it [00:03, 10.52it/s]42it [00:03, 10.49it/s]44it [00:04, 10.51it/s]46it [00:04, 10.58it/s]48it [00:04, 10.62it/s]50it [00:04, 10.54it/s]52it [00:04, 10.15it/s]54it [00:05, 10.12it/s]56it [00:05, 10.40it/s]58it [00:05, 10.30it/s]60it [00:05, 10.34it/s]62it [00:05, 10.53it/s]64it [00:06, 10.39it/s]66it [00:06, 10.37it/s]68it [00:06, 10.56it/s]70it [00:06, 10.50it/s]72it [00:06, 10.60it/s]74it [00:07, 10.57it/s]76it [00:07, 10.48it/s]78it [00:07, 10.46it/s]80it [00:07, 10.39it/s]82it [00:07, 10.32it/s]84it [00:08, 10.24it/s]86it [00:08, 10.21it/s]88it [00:08, 10.25it/s]90it [00:08, 10.24it/s]92it [00:08, 10.42it/s]94it [00:09, 10.20it/s]96it [00:09, 10.03it/s]98it [00:09, 10.25it/s]100it [00:09, 10.29it/s]102it [00:09, 10.07it/s]104it [00:09, 10.19it/s]106it [00:10, 10.28it/s]108it [00:10, 10.22it/s]110it [00:10, 10.36it/s]112it [00:10, 10.50it/s]114it [00:10, 10.44it/s]116it [00:11, 10.55it/s]118it [00:11, 10.51it/s]120it [00:11, 10.47it/s]122it [00:11, 10.62it/s]124it [00:11, 10.62it/s]126it [00:12, 10.45it/s]128it [00:12, 10.49it/s]130it [00:12, 10.63it/s]132it [00:12, 10.70it/s]134it [00:12, 10.73it/s]136it [00:13, 10.71it/s]138it [00:13, 10.69it/s]140it [00:13, 10.77it/s]142it [00:13, 10.60it/s]144it [00:13, 10.65it/s]146it [00:13, 10.81it/s]148it [00:14, 10.69it/s]150it [00:14, 10.85it/s]152it [00:14, 10.89it/s]154it [00:14, 10.79it/s]156it [00:14, 10.86it/s]158it [00:15, 10.87it/s]160it [00:15, 10.80it/s]162it [00:15, 10.94it/s]164it [00:15, 10.85it/s]166it [00:15, 10.82it/s]168it [00:15, 10.79it/s]170it [00:16, 10.83it/s]172it [00:16, 10.72it/s]174it [00:16, 10.59it/s]176it [00:16, 10.65it/s]178it [00:16, 10.72it/s]180it [00:17, 10.73it/s]182it [00:17, 10.83it/s]184it [00:17, 10.67it/s]186it [00:17, 10.43it/s]188it [00:17, 10.60it/s]190it [00:18, 10.70it/s]192it [00:18, 10.42it/s]194it [00:18, 10.53it/s]196it [00:18, 10.57it/s]198it [00:18, 10.63it/s]200it [00:18, 10.55it/s]202it [00:19, 10.63it/s]204it [00:19, 10.68it/s]206it [00:19, 10.73it/s]208it [00:19, 10.72it/s]210it [00:19, 10.69it/s]212it [00:20, 10.72it/s]214it [00:20, 10.57it/s]216it [00:20, 10.65it/s]218it [00:20, 10.66it/s]220it [00:20, 10.48it/s]222it [00:21, 10.62it/s]224it [00:21, 10.78it/s]226it [00:21, 10.72it/s]228it [00:21, 10.85it/s]230it [00:21, 10.82it/s]232it [00:21, 10.72it/s]234it [00:22, 10.82it/s]236it [00:22, 10.58it/s]238it [00:22, 10.57it/s]240it [00:22, 10.59it/s]242it [00:22, 10.65it/s]244it [00:23, 10.71it/s]246it [00:23, 10.52it/s]248it [00:23, 10.33it/s]250it [00:23, 10.61it/s]252it [00:23, 10.67it/s]254it [00:24, 10.72it/s]256it [00:24, 10.84it/s]258it [00:24, 10.75it/s]260it [00:24, 10.83it/s]262it [00:24, 10.99it/s]264it [00:24, 10.76it/s]266it [00:25, 10.55it/s]268it [00:25, 10.65it/s]270it [00:25, 10.71it/s]272it [00:25, 10.73it/s]274it [00:25, 10.74it/s]276it [00:26, 10.61it/s]278it [00:26, 10.55it/s]280it [00:26, 10.56it/s]282it [00:26, 10.75it/s]284it [00:26, 10.70it/s]286it [00:27, 10.63it/s]288it [00:27, 10.74it/s]290it [00:27, 10.62it/s]292it [00:27, 10.70it/s]294it [00:27, 10.75it/s]296it [00:27, 10.54it/s]298it [00:28, 10.55it/s]300it [00:28, 10.46it/s]300it [00:28, 10.58it/s]
+INFO:ptsemseg:Iter 5000 Loss: 0.9437
+INFO:ptsemseg:Overall Acc: 	: 0.8061449736998986
+INFO:ptsemseg:Mean Acc : 	: 0.6853587926600173
+INFO:ptsemseg:FreqW Acc : 	: 0.6957377020764854
+INFO:ptsemseg:Mean IoU : 	: 0.5593992454589827
+INFO:ptsemseg:0: 0.42625770354510933
+INFO:ptsemseg:1: 0.714045559855444
+INFO:ptsemseg:2: 0.4324677849275305
+INFO:ptsemseg:3: 0.760697678087222
+INFO:ptsemseg:4: 0.47064559683952595
+INFO:ptsemseg:5: 0.7361973639682564
+INFO:ptsemseg:6: 0.44849681512573203
+INFO:ptsemseg:7: 0.8431651949823777
+INFO:ptsemseg:8: 0.7297477734901793
+INFO:ptsemseg:9: 0.5852840498421183
+INFO:ptsemseg:10: 0.07390752654660404
+INFO:ptsemseg:11: 0.0
+INFO:ptsemseg:12: 0.8148793561150471
+INFO:ptsemseg:13: 0.07378795950985616
+INFO:ptsemseg:14: 0.22545072322292928
+INFO:ptsemseg:15: 0.43365912338811774
+INFO:ptsemseg:16: 0.7372483920444862
+INFO:ptsemseg:17: 0.9890920781696124
+INFO:ptsemseg:18: 0.2231156752567332
+INFO:ptsemseg:19: 0.6409895769455919
+INFO:ptsemseg:20: 0.8181295809178436
+INFO:ptsemseg:21: 0.9281905106167075
+INFO:ptsemseg:22: 0.760726622159575
+INFO:ptsemseg:Iter [5100/20000]  Loss: 0.3528  Time/Image: 0.1165
+INFO:ptsemseg:Iter [5200/20000]  Loss: 0.3357  Time/Image: 0.1153
+INFO:ptsemseg:Iter [5300/20000]  Loss: 0.3559  Time/Image: 0.1150
+INFO:ptsemseg:Iter [5400/20000]  Loss: 0.0195  Time/Image: 0.1154
+INFO:ptsemseg:Iter [5500/20000]  Loss: 0.8733  Time/Image: 0.1153
+INFO:ptsemseg:Iter [5600/20000]  Loss: 0.5182  Time/Image: 0.1159
+INFO:ptsemseg:Iter [5700/20000]  Loss: 1.2485  Time/Image: 0.1173
+INFO:ptsemseg:Iter [5800/20000]  Loss: 0.2271  Time/Image: 0.1145
+INFO:ptsemseg:Iter [5900/20000]  Loss: 0.4044  Time/Image: 0.1171
+INFO:ptsemseg:Iter [6000/20000]  Loss: 0.0068  Time/Image: 0.1173
+Overall Acc: 	 0.8061449736998986
+Mean Acc : 	 0.6853587926600173
+FreqW Acc : 	 0.6957377020764854
+Mean IoU : 	 0.5593992454589827
+Iter [5100/20000]  Loss: 0.3528  Time/Image: 0.1165
+Iter [5200/20000]  Loss: 0.3357  Time/Image: 0.1153
+Iter [5300/20000]  Loss: 0.3559  Time/Image: 0.1150
+Iter [5400/20000]  Loss: 0.0195  Time/Image: 0.1154
+Iter [5500/20000]  Loss: 0.8733  Time/Image: 0.1153
+Iter [5600/20000]  Loss: 0.5182  Time/Image: 0.1159
+Iter [5700/20000]  Loss: 1.2485  Time/Image: 0.1173
+Iter [5800/20000]  Loss: 0.2271  Time/Image: 0.1145
+Iter [5900/20000]  Loss: 0.4044  Time/Image: 0.1171
+Iter [6000/20000]  Loss: 0.0068  Time/Image: 0.1173
+0it [00:00, ?it/s]2it [00:00, 11.18it/s]4it [00:00, 10.65it/s]6it [00:00, 10.50it/s]8it [00:00, 10.64it/s]10it [00:00, 10.60it/s]12it [00:01, 10.66it/s]14it [00:01, 10.64it/s]16it [00:01, 10.77it/s]18it [00:01, 10.45it/s]20it [00:01, 10.13it/s]22it [00:02, 10.15it/s]24it [00:02, 10.35it/s]26it [00:02, 10.36it/s]28it [00:02, 10.47it/s]30it [00:02, 10.49it/s]32it [00:03, 10.58it/s]34it [00:03, 10.63it/s]36it [00:03, 10.58it/s]38it [00:03, 10.73it/s]40it [00:03, 10.40it/s]42it [00:04, 10.41it/s]44it [00:04, 10.47it/s]46it [00:04, 10.35it/s]48it [00:04, 10.50it/s]50it [00:04, 10.63it/s]52it [00:04, 10.69it/s]54it [00:05, 10.76it/s]56it [00:05, 10.28it/s]58it [00:05, 10.15it/s]60it [00:05, 10.28it/s]62it [00:05, 10.46it/s]64it [00:06, 10.29it/s]66it [00:06, 10.41it/s]68it [00:06, 10.58it/s]70it [00:06, 10.24it/s]72it [00:06, 10.23it/s]74it [00:07, 10.44it/s]76it [00:07, 10.35it/s]78it [00:07, 10.26it/s]80it [00:07, 10.39it/s]82it [00:07, 10.29it/s]84it [00:08, 10.17it/s]86it [00:08, 10.31it/s]88it [00:08, 10.40it/s]90it [00:08, 10.43it/s]92it [00:08, 10.53it/s]94it [00:09, 10.44it/s]96it [00:09, 10.38it/s]98it [00:09, 10.41it/s]100it [00:09, 10.50it/s]102it [00:09, 10.59it/s]104it [00:09, 10.67it/s]106it [00:10, 10.48it/s]108it [00:10, 10.58it/s]110it [00:10, 10.64it/s]112it [00:10, 10.70it/s]114it [00:10, 10.68it/s]116it [00:11, 10.76it/s]118it [00:11, 10.77it/s]120it [00:11, 10.60it/s]122it [00:11, 10.79it/s]124it [00:11, 10.63it/s]126it [00:12, 10.58it/s]128it [00:12, 10.77it/s]130it [00:12, 10.80it/s]132it [00:12, 10.80it/s]134it [00:12, 10.97it/s]136it [00:12, 10.65it/s]138it [00:13, 10.40it/s]140it [00:13, 10.57it/s]142it [00:13, 10.66it/s]144it [00:13, 10.54it/s]146it [00:13, 10.65it/s]148it [00:14, 10.60it/s]150it [00:14, 10.46it/s]152it [00:14, 10.60it/s]154it [00:14, 10.59it/s]156it [00:14, 10.70it/s]158it [00:15, 10.58it/s]160it [00:15, 10.52it/s]162it [00:15, 10.70it/s]164it [00:15, 10.74it/s]166it [00:15, 10.67it/s]168it [00:15, 10.45it/s]170it [00:16, 10.55it/s]172it [00:16, 10.34it/s]174it [00:16, 10.45it/s]176it [00:16, 10.72it/s]178it [00:16, 10.63it/s]180it [00:17, 10.70it/s]182it [00:17, 10.75it/s]184it [00:17, 10.68it/s]186it [00:17, 10.80it/s]188it [00:17, 10.84it/s]190it [00:18, 10.77it/s]192it [00:18, 10.73it/s]194it [00:18, 10.87it/s]196it [00:18, 10.85it/s]198it [00:18, 10.61it/s]200it [00:18, 10.54it/s]202it [00:19, 10.65it/s]204it [00:19, 10.64it/s]206it [00:19, 10.83it/s]208it [00:19, 10.82it/s]210it [00:19, 10.73it/s]212it [00:20, 10.59it/s]214it [00:20, 10.59it/s]216it [00:20, 10.70it/s]218it [00:20, 10.49it/s]220it [00:20, 10.43it/s]222it [00:21, 10.49it/s]224it [00:21, 10.15it/s]226it [00:21, 10.26it/s]228it [00:21, 10.40it/s]230it [00:21, 10.41it/s]232it [00:21, 10.56it/s]234it [00:22, 10.57it/s]236it [00:22, 10.66it/s]238it [00:22, 10.61it/s]240it [00:22, 10.61it/s]242it [00:22, 10.70it/s]244it [00:23, 10.42it/s]246it [00:23, 10.56it/s]248it [00:23, 10.57it/s]250it [00:23, 10.44it/s]252it [00:23, 10.61it/s]254it [00:24, 10.53it/s]256it [00:24, 10.62it/s]258it [00:24, 10.54it/s]260it [00:24, 10.62it/s]262it [00:24, 10.59it/s]264it [00:25, 10.55it/s]266it [00:25, 10.64it/s]268it [00:25, 10.67it/s]270it [00:25, 10.67it/s]272it [00:25, 10.80it/s]274it [00:25, 10.47it/s]276it [00:26, 10.35it/s]278it [00:26, 10.63it/s]280it [00:26, 10.56it/s]282it [00:26, 10.60it/s]284it [00:26, 10.69it/s]286it [00:27, 10.74it/s]288it [00:27, 10.53it/s]290it [00:27, 10.21it/s]292it [00:27, 10.06it/s]294it [00:27, 10.23it/s]296it [00:28, 10.44it/s]298it [00:28, 10.53it/s]300it [00:28, 10.67it/s]300it [00:28, 10.55it/s]
+INFO:ptsemseg:Iter 6000 Loss: 1.0135
+INFO:ptsemseg:Overall Acc: 	: 0.7916804291329491
+INFO:ptsemseg:Mean Acc : 	: 0.6726086397364077
+INFO:ptsemseg:FreqW Acc : 	: 0.6772271813525658
+INFO:ptsemseg:Mean IoU : 	: 0.5434489948049602
+INFO:ptsemseg:0: 0.4528334798729937
+INFO:ptsemseg:1: 0.6902211820140428
+INFO:ptsemseg:2: 0.3972201396117367
+INFO:ptsemseg:3: 0.7562821240836594
+INFO:ptsemseg:4: 0.4965365495884606
+INFO:ptsemseg:5: 0.7234148613820005
+INFO:ptsemseg:6: 0.3781676820498151
+INFO:ptsemseg:7: 0.8486911821071855
+INFO:ptsemseg:8: 0.7147210405759162
+INFO:ptsemseg:9: 0.5760835185738142
+INFO:ptsemseg:10: 0.0
+INFO:ptsemseg:11: 0.0
+INFO:ptsemseg:12: 0.7866150850836782
+INFO:ptsemseg:13: 0.05563614491933201
+INFO:ptsemseg:14: 0.22084369724394898
+INFO:ptsemseg:15: 0.4198461106925019
+INFO:ptsemseg:16: 0.7275351766336456
+INFO:ptsemseg:17: 0.9754379161010923
+INFO:ptsemseg:18: 0.1580855569991964
+INFO:ptsemseg:19: 0.6470547023765948
+INFO:ptsemseg:20: 0.8053419618736549
+INFO:ptsemseg:21: 0.9311266681251368
+INFO:ptsemseg:22: 0.7376321006056797
+INFO:ptsemseg:Iter [6100/20000]  Loss: 0.0528  Time/Image: 0.1163
+INFO:ptsemseg:Iter [6200/20000]  Loss: 0.0496  Time/Image: 0.1182
+INFO:ptsemseg:Iter [6300/20000]  Loss: 0.0445  Time/Image: 0.1151
+INFO:ptsemseg:Iter [6400/20000]  Loss: 0.6349  Time/Image: 0.1160
+INFO:ptsemseg:Iter [6500/20000]  Loss: 0.1612  Time/Image: 0.1155
+INFO:ptsemseg:Iter [6600/20000]  Loss: 0.9134  Time/Image: 0.1161
+INFO:ptsemseg:Iter [6700/20000]  Loss: 0.7319  Time/Image: 0.1159
+INFO:ptsemseg:Iter [6800/20000]  Loss: 0.2305  Time/Image: 0.1156
+INFO:ptsemseg:Iter [6900/20000]  Loss: 0.2623  Time/Image: 0.1172
+INFO:ptsemseg:Iter [7000/20000]  Loss: 0.1022  Time/Image: 0.1175
+Overall Acc: 	 0.7916804291329491
+Mean Acc : 	 0.6726086397364077
+FreqW Acc : 	 0.6772271813525658
+Mean IoU : 	 0.5434489948049602
+Iter [6100/20000]  Loss: 0.0528  Time/Image: 0.1163
+Iter [6200/20000]  Loss: 0.0496  Time/Image: 0.1182
+Iter [6300/20000]  Loss: 0.0445  Time/Image: 0.1151
+Iter [6400/20000]  Loss: 0.6349  Time/Image: 0.1160
+Iter [6500/20000]  Loss: 0.1612  Time/Image: 0.1155
+Iter [6600/20000]  Loss: 0.9134  Time/Image: 0.1161
+Iter [6700/20000]  Loss: 0.7319  Time/Image: 0.1159
+Iter [6800/20000]  Loss: 0.2305  Time/Image: 0.1156
+Iter [6900/20000]  Loss: 0.2623  Time/Image: 0.1172
+Iter [7000/20000]  Loss: 0.1022  Time/Image: 0.1175
+0it [00:00, ?it/s]2it [00:00, 10.83it/s]4it [00:00, 10.99it/s]6it [00:00, 10.89it/s]8it [00:00, 10.43it/s]10it [00:00, 10.53it/s]12it [00:01, 10.59it/s]14it [00:01, 10.65it/s]16it [00:01, 10.71it/s]18it [00:01, 10.87it/s]20it [00:01, 10.80it/s]22it [00:02, 10.77it/s]24it [00:02, 10.69it/s]26it [00:02, 10.52it/s]28it [00:02, 10.52it/s]30it [00:02, 10.74it/s]32it [00:02, 10.80it/s]34it [00:03, 10.82it/s]36it [00:03, 10.75it/s]38it [00:03, 10.78it/s]40it [00:03, 10.53it/s]42it [00:03, 10.61it/s]44it [00:04, 10.69it/s]46it [00:04, 10.54it/s]48it [00:04, 10.59it/s]50it [00:04, 10.62it/s]52it [00:04, 10.66it/s]54it [00:05, 10.63it/s]56it [00:05, 10.69it/s]58it [00:05, 10.62it/s]60it [00:05, 10.74it/s]62it [00:05, 10.49it/s]64it [00:06, 10.52it/s]66it [00:06, 10.72it/s]68it [00:06, 10.63it/s]70it [00:06, 10.74it/s]72it [00:06, 10.80it/s]74it [00:06, 10.46it/s]76it [00:07, 10.50it/s]78it [00:07, 10.69it/s]80it [00:07, 10.64it/s]82it [00:07, 10.66it/s]84it [00:07, 10.71it/s]86it [00:08, 10.72it/s]88it [00:08, 10.73it/s]90it [00:08, 10.79it/s]92it [00:08, 10.71it/s]94it [00:08, 10.50it/s]96it [00:09, 10.52it/s]98it [00:09, 10.70it/s]100it [00:09, 10.67it/s]102it [00:09, 10.65it/s]104it [00:09, 10.83it/s]106it [00:09, 10.63it/s]108it [00:10, 10.55it/s]110it [00:10, 10.77it/s]112it [00:10, 10.73it/s]114it [00:10, 10.39it/s]116it [00:10, 10.58it/s]118it [00:11, 10.72it/s]120it [00:11, 10.53it/s]122it [00:11, 10.60it/s]124it [00:11, 10.65it/s]126it [00:11, 10.68it/s]128it [00:12, 10.77it/s]130it [00:12, 10.85it/s]132it [00:12, 10.88it/s]134it [00:12, 10.69it/s]136it [00:12, 10.64it/s]138it [00:12, 10.81it/s]140it [00:13, 10.72it/s]142it [00:13, 10.68it/s]144it [00:13, 10.82it/s]146it [00:13, 10.80it/s]148it [00:13, 10.98it/s]150it [00:14, 11.02it/s]152it [00:14, 10.86it/s]154it [00:14, 10.89it/s]156it [00:14, 10.84it/s]158it [00:14, 10.75it/s]160it [00:14, 10.61it/s]162it [00:15, 10.60it/s]164it [00:15, 10.65it/s]166it [00:15, 10.73it/s]168it [00:15, 10.82it/s]170it [00:15, 10.87it/s]172it [00:16, 10.67it/s]174it [00:16, 10.79it/s]176it [00:16, 10.78it/s]178it [00:16, 10.56it/s]180it [00:16, 10.64it/s]182it [00:17, 10.74it/s]184it [00:17, 10.54it/s]186it [00:17, 10.70it/s]188it [00:17, 10.90it/s]190it [00:17, 10.70it/s]192it [00:17, 10.79it/s]194it [00:18, 10.86it/s]196it [00:18, 10.92it/s]198it [00:18, 10.92it/s]200it [00:18, 10.90it/s]202it [00:18, 10.88it/s]204it [00:19, 10.66it/s]206it [00:19, 10.74it/s]208it [00:19, 10.80it/s]210it [00:19, 10.43it/s]212it [00:19, 10.18it/s]214it [00:20, 10.05it/s]216it [00:20, 10.42it/s]218it [00:20, 10.34it/s]220it [00:20, 10.30it/s]222it [00:20, 10.48it/s]224it [00:20, 10.57it/s]226it [00:21, 10.60it/s]228it [00:21, 10.69it/s]230it [00:21, 10.65it/s]232it [00:21, 10.72it/s]234it [00:21, 10.62it/s]236it [00:22, 10.42it/s]238it [00:22, 10.30it/s]240it [00:22, 10.28it/s]242it [00:22, 10.25it/s]244it [00:22, 10.03it/s]246it [00:23, 10.29it/s]248it [00:23, 10.24it/s]250it [00:23, 10.15it/s]252it [00:23, 10.34it/s]254it [00:23, 10.34it/s]256it [00:24, 10.43it/s]258it [00:24, 10.38it/s]260it [00:24, 10.42it/s]262it [00:24, 10.57it/s]264it [00:24, 10.48it/s]266it [00:25, 10.27it/s]268it [00:25, 10.46it/s]270it [00:25, 10.54it/s]272it [00:25, 10.57it/s]274it [00:25, 10.41it/s]276it [00:25, 10.22it/s]278it [00:26, 10.40it/s]280it [00:26, 10.47it/s]282it [00:26, 10.45it/s]284it [00:26, 10.52it/s]286it [00:26, 10.49it/s]288it [00:27, 10.32it/s]290it [00:27, 10.29it/s]292it [00:27, 10.36it/s]294it [00:27, 10.41it/s]296it [00:27, 10.42it/s]298it [00:28, 10.54it/s]300it [00:28, 10.53it/s]300it [00:28, 10.61it/s]
+INFO:ptsemseg:Iter 7000 Loss: 0.9399
+INFO:ptsemseg:Overall Acc: 	: 0.8188628937223538
+INFO:ptsemseg:Mean Acc : 	: 0.71762501081667
+INFO:ptsemseg:FreqW Acc : 	: 0.7075088794664657
+INFO:ptsemseg:Mean IoU : 	: 0.5822478573852962
+INFO:ptsemseg:0: 0.4562608121845517
+INFO:ptsemseg:1: 0.8242852994016869
+INFO:ptsemseg:2: 0.3896130185513671
+INFO:ptsemseg:3: 0.7754730407870755
+INFO:ptsemseg:4: 0.4482340525854907
+INFO:ptsemseg:5: 0.7345254625965109
+INFO:ptsemseg:6: 0.5076771767708012
+INFO:ptsemseg:7: 0.8790349069843829
+INFO:ptsemseg:8: 0.6907221531975486
+INFO:ptsemseg:9: 0.5516082197463321
+INFO:ptsemseg:10: 0.3599269098320332
+INFO:ptsemseg:11: 0.0
+INFO:ptsemseg:12: 0.7999338030198087
+INFO:ptsemseg:13: 0.36642180670228264
+INFO:ptsemseg:14: 0.16419190675531478
+INFO:ptsemseg:15: 0.47865901852016723
+INFO:ptsemseg:16: 0.7424836275493354
+INFO:ptsemseg:17: 0.9823344689111775
+INFO:ptsemseg:18: 0.39587515555595926
+INFO:ptsemseg:19: 0.64051711689671
+INFO:ptsemseg:20: 0.5451748410313949
+INFO:ptsemseg:21: 0.8699881342178981
+INFO:ptsemseg:22: 0.7887597880639805
+INFO:ptsemseg:Iter [7100/20000]  Loss: 0.2301  Time/Image: 0.1145
+INFO:ptsemseg:Iter [7200/20000]  Loss: 0.2892  Time/Image: 0.1149
+INFO:ptsemseg:Iter [7300/20000]  Loss: 0.0669  Time/Image: 0.1154
+INFO:ptsemseg:Iter [7400/20000]  Loss: 0.2354  Time/Image: 0.1164
+INFO:ptsemseg:Iter [7500/20000]  Loss: 0.3271  Time/Image: 0.1136
+INFO:ptsemseg:Iter [7600/20000]  Loss: 0.2572  Time/Image: 0.1157
+INFO:ptsemseg:Iter [7700/20000]  Loss: 0.0107  Time/Image: 0.1167
+INFO:ptsemseg:Iter [7800/20000]  Loss: 0.0624  Time/Image: 0.1160
+INFO:ptsemseg:Iter [7900/20000]  Loss: 0.2420  Time/Image: 0.1172
+INFO:ptsemseg:Iter [8000/20000]  Loss: 0.1191  Time/Image: 0.1175
+Overall Acc: 	 0.8188628937223538
+Mean Acc : 	 0.71762501081667
+FreqW Acc : 	 0.7075088794664657
+Mean IoU : 	 0.5822478573852962
+Iter [7100/20000]  Loss: 0.2301  Time/Image: 0.1145
+Iter [7200/20000]  Loss: 0.2892  Time/Image: 0.1149
+Iter [7300/20000]  Loss: 0.0669  Time/Image: 0.1154
+Iter [7400/20000]  Loss: 0.2354  Time/Image: 0.1164
+Iter [7500/20000]  Loss: 0.3271  Time/Image: 0.1136
+Iter [7600/20000]  Loss: 0.2572  Time/Image: 0.1157
+Iter [7700/20000]  Loss: 0.0107  Time/Image: 0.1167
+Iter [7800/20000]  Loss: 0.0624  Time/Image: 0.1160
+Iter [7900/20000]  Loss: 0.2420  Time/Image: 0.1172
+Iter [8000/20000]  Loss: 0.1191  Time/Image: 0.1175
+0it [00:00, ?it/s]2it [00:00, 11.10it/s]4it [00:00, 10.44it/s]6it [00:00,  8.59it/s]8it [00:00,  9.42it/s]9it [00:00,  9.26it/s]10it [00:01,  9.28it/s]12it [00:01,  9.57it/s]14it [00:01,  9.92it/s]16it [00:01, 10.16it/s]18it [00:01, 10.23it/s]20it [00:02, 10.10it/s]22it [00:02,  9.94it/s]23it [00:02,  9.87it/s]25it [00:02, 10.07it/s]27it [00:02, 10.37it/s]29it [00:02, 10.19it/s]31it [00:03, 10.32it/s]33it [00:03, 10.31it/s]35it [00:03, 10.35it/s]37it [00:03,  9.95it/s]39it [00:03,  9.93it/s]40it [00:04,  9.87it/s]42it [00:04, 10.10it/s]44it [00:04, 10.17it/s]46it [00:04, 10.06it/s]48it [00:04, 10.28it/s]50it [00:04, 10.35it/s]52it [00:05, 10.15it/s]54it [00:05, 10.35it/s]56it [00:05, 10.44it/s]58it [00:05, 10.24it/s]60it [00:05, 10.48it/s]62it [00:06, 10.43it/s]64it [00:06,  9.87it/s]66it [00:06,  9.96it/s]68it [00:06, 10.25it/s]70it [00:06, 10.35it/s]72it [00:07, 10.09it/s]74it [00:07, 10.35it/s]76it [00:07, 10.42it/s]78it [00:07, 10.37it/s]80it [00:07, 10.34it/s]82it [00:08, 10.36it/s]84it [00:08, 10.36it/s]86it [00:08, 10.45it/s]88it [00:08, 10.56it/s]90it [00:08, 10.38it/s]92it [00:09, 10.54it/s]94it [00:09, 10.57it/s]96it [00:09, 10.39it/s]98it [00:09, 10.50it/s]100it [00:09, 10.68it/s]102it [00:09, 10.56it/s]104it [00:10, 10.64it/s]106it [00:10, 10.63it/s]108it [00:10, 10.73it/s]110it [00:10, 10.77it/s]112it [00:10, 10.74it/s]114it [00:11, 10.67it/s]116it [00:11, 10.84it/s]118it [00:11, 10.86it/s]120it [00:11, 10.87it/s]122it [00:11, 10.82it/s]124it [00:12, 10.76it/s]126it [00:12, 10.90it/s]128it [00:12, 10.91it/s]130it [00:12, 10.94it/s]132it [00:12, 10.98it/s]134it [00:12, 10.82it/s]136it [00:13, 10.90it/s]138it [00:13, 10.89it/s]140it [00:13, 10.87it/s]142it [00:13, 10.94it/s]144it [00:13, 10.87it/s]146it [00:14, 10.84it/s]148it [00:14, 10.89it/s]150it [00:14, 10.94it/s]152it [00:14, 10.98it/s]154it [00:14, 10.97it/s]156it [00:14, 10.87it/s]158it [00:15, 10.62it/s]160it [00:15, 10.27it/s]162it [00:15, 10.48it/s]164it [00:15, 10.64it/s]166it [00:15, 10.64it/s]168it [00:16, 10.61it/s]170it [00:16, 10.66it/s]172it [00:16, 10.63it/s]174it [00:16, 10.63it/s]176it [00:16, 10.65it/s]178it [00:17, 10.75it/s]180it [00:17, 10.64it/s]182it [00:17, 10.58it/s]184it [00:17, 10.62it/s]186it [00:17, 10.58it/s]188it [00:18, 10.13it/s]190it [00:18, 10.12it/s]192it [00:18, 10.38it/s]194it [00:18, 10.42it/s]196it [00:18, 10.46it/s]198it [00:18, 10.61it/s]200it [00:19, 10.55it/s]202it [00:19, 10.17it/s]204it [00:19, 10.32it/s]206it [00:19, 10.36it/s]208it [00:19, 10.21it/s]210it [00:20, 10.41it/s]212it [00:20, 10.50it/s]214it [00:20, 10.50it/s]216it [00:20, 10.65it/s]218it [00:20, 10.54it/s]220it [00:21, 10.64it/s]222it [00:21, 10.75it/s]224it [00:21, 10.69it/s]226it [00:21, 10.84it/s]228it [00:21, 10.84it/s]230it [00:21, 10.69it/s]232it [00:22, 10.38it/s]234it [00:22, 10.51it/s]236it [00:22, 10.50it/s]238it [00:22, 10.63it/s]240it [00:22, 10.58it/s]242it [00:23, 10.54it/s]244it [00:23, 10.48it/s]246it [00:23, 10.50it/s]248it [00:23, 10.43it/s]250it [00:23, 10.52it/s]252it [00:24, 10.70it/s]254it [00:24, 10.02it/s]256it [00:24,  9.70it/s]257it [00:24,  9.58it/s]259it [00:24,  9.49it/s]260it [00:24,  9.50it/s]261it [00:25,  9.24it/s]263it [00:25,  9.16it/s]264it [00:25,  9.19it/s]265it [00:25,  9.04it/s]266it [00:25,  9.25it/s]267it [00:25,  9.26it/s]269it [00:25,  9.89it/s]271it [00:26, 10.11it/s]272it [00:26,  9.98it/s]273it [00:26,  9.97it/s]274it [00:26,  9.74it/s]276it [00:26,  9.91it/s]278it [00:26, 10.24it/s]280it [00:27, 10.29it/s]282it [00:27, 10.24it/s]284it [00:27, 10.45it/s]286it [00:27, 10.48it/s]288it [00:27, 10.49it/s]290it [00:27, 10.49it/s]292it [00:28, 10.55it/s]294it [00:28, 10.44it/s]296it [00:28, 10.54it/s]298it [00:28, 10.66it/s]300it [00:28, 10.62it/s]300it [00:28, 10.38it/s]
+INFO:ptsemseg:Iter 8000 Loss: 0.9370
+INFO:ptsemseg:Overall Acc: 	: 0.8222132227074672
+INFO:ptsemseg:Mean Acc : 	: 0.748419462977316
+INFO:ptsemseg:FreqW Acc : 	: 0.7127754792826139
+INFO:ptsemseg:Mean IoU : 	: 0.5945745687749502
+INFO:ptsemseg:0: 0.4886668989588193
+INFO:ptsemseg:1: 0.7738086140855295
+INFO:ptsemseg:2: 0.4494035614251342
+INFO:ptsemseg:3: 0.7524475779735127
+INFO:ptsemseg:4: 0.48292552415235684
+INFO:ptsemseg:5: 0.7183678543126621
+INFO:ptsemseg:6: 0.4474313653071633
+INFO:ptsemseg:7: 0.7479524503262612
+INFO:ptsemseg:8: 0.6675680351661871
+INFO:ptsemseg:9: 0.6375000615796915
+INFO:ptsemseg:10: 0.3891887333445775
+INFO:ptsemseg:11: 0.0
+INFO:ptsemseg:12: 0.8093717333454106
+INFO:ptsemseg:13: 0.37633656195141113
+INFO:ptsemseg:14: 0.2622120185040993
+INFO:ptsemseg:15: 0.536682275852369
+INFO:ptsemseg:16: 0.7269478365132767
+INFO:ptsemseg:17: 0.9860233927093234
+INFO:ptsemseg:18: 0.42976022041849726
+INFO:ptsemseg:19: 0.6645786111330194
+INFO:ptsemseg:20: 0.6460223835450696
+INFO:ptsemseg:21: 0.9107808039733574
+INFO:ptsemseg:22: 0.7712385672461237
+INFO:ptsemseg:Iter [8100/20000]  Loss: 0.3129  Time/Image: 0.1165
+INFO:ptsemseg:Iter [8200/20000]  Loss: 0.0948  Time/Image: 0.1147
+INFO:ptsemseg:Iter [8300/20000]  Loss: 0.0476  Time/Image: 0.1164
+INFO:ptsemseg:Iter [8400/20000]  Loss: 0.2035  Time/Image: 0.1171
+INFO:ptsemseg:Iter [8500/20000]  Loss: 0.2500  Time/Image: 0.1160
+INFO:ptsemseg:Iter [8600/20000]  Loss: 0.1352  Time/Image: 0.1163
+INFO:ptsemseg:Iter [8700/20000]  Loss: 0.0743  Time/Image: 0.1162
+INFO:ptsemseg:Iter [8800/20000]  Loss: 0.8876  Time/Image: 0.1164
+INFO:ptsemseg:Iter [8900/20000]  Loss: 0.0823  Time/Image: 0.1160
+INFO:ptsemseg:Iter [9000/20000]  Loss: 0.0534  Time/Image: 0.1175
+Overall Acc: 	 0.8222132227074672
+Mean Acc : 	 0.748419462977316
+FreqW Acc : 	 0.7127754792826139
+Mean IoU : 	 0.5945745687749502
+Iter [8100/20000]  Loss: 0.3129  Time/Image: 0.1165
+Iter [8200/20000]  Loss: 0.0948  Time/Image: 0.1147
+Iter [8300/20000]  Loss: 0.0476  Time/Image: 0.1164
+Iter [8400/20000]  Loss: 0.2035  Time/Image: 0.1171
+Iter [8500/20000]  Loss: 0.2500  Time/Image: 0.1160
+Iter [8600/20000]  Loss: 0.1352  Time/Image: 0.1163
+Iter [8700/20000]  Loss: 0.0743  Time/Image: 0.1162
+Iter [8800/20000]  Loss: 0.8876  Time/Image: 0.1164
+Iter [8900/20000]  Loss: 0.0823  Time/Image: 0.1160
+Iter [9000/20000]  Loss: 0.0534  Time/Image: 0.1175
+0it [00:00, ?it/s]2it [00:00, 10.83it/s]4it [00:00, 10.85it/s]6it [00:00, 10.53it/s]8it [00:00, 10.37it/s]10it [00:00, 10.58it/s]12it [00:01, 10.70it/s]14it [00:01, 10.72it/s]16it [00:01, 10.62it/s]18it [00:01, 10.64it/s]20it [00:01, 10.43it/s]22it [00:02, 10.18it/s]24it [00:02, 10.30it/s]26it [00:02, 10.42it/s]28it [00:02, 10.47it/s]30it [00:02, 10.51it/s]32it [00:03, 10.55it/s]34it [00:03, 10.56it/s]36it [00:03, 10.72it/s]38it [00:03, 10.40it/s]40it [00:03, 10.33it/s]42it [00:04, 10.40it/s]44it [00:04, 10.36it/s]46it [00:04, 10.39it/s]48it [00:04, 10.50it/s]50it [00:04, 10.60it/s]52it [00:04, 10.62it/s]54it [00:05, 10.54it/s]56it [00:05, 10.58it/s]58it [00:05, 10.51it/s]60it [00:05, 10.57it/s]62it [00:05, 10.63it/s]64it [00:06, 10.52it/s]66it [00:06, 10.53it/s]68it [00:06, 10.58it/s]70it [00:06, 10.62it/s]72it [00:06, 10.64it/s]74it [00:07, 10.73it/s]76it [00:07, 10.63it/s]78it [00:07, 10.55it/s]80it [00:07, 10.62it/s]82it [00:07, 10.65it/s]84it [00:07, 10.64it/s]86it [00:08, 10.73it/s]88it [00:08, 10.70it/s]90it [00:08, 10.33it/s]92it [00:08, 10.26it/s]94it [00:08, 10.39it/s]96it [00:09, 10.51it/s]98it [00:09, 10.58it/s]100it [00:09, 10.61it/s]102it [00:09, 10.63it/s]104it [00:09, 10.75it/s]106it [00:10, 10.48it/s]108it [00:10, 10.58it/s]110it [00:10, 10.68it/s]112it [00:10, 10.56it/s]114it [00:10, 10.46it/s]116it [00:10, 10.64it/s]118it [00:11, 10.64it/s]120it [00:11, 10.68it/s]122it [00:11, 10.85it/s]124it [00:11, 10.67it/s]126it [00:11, 10.82it/s]128it [00:12, 10.88it/s]130it [00:12, 10.72it/s]132it [00:12, 10.73it/s]134it [00:12, 10.78it/s]136it [00:12, 10.80it/s]138it [00:13, 10.70it/s]140it [00:13, 10.64it/s]142it [00:13, 10.75it/s]144it [00:13, 10.74it/s]146it [00:13, 10.75it/s]148it [00:13, 10.77it/s]150it [00:14, 10.80it/s]152it [00:14, 10.88it/s]154it [00:14, 10.87it/s]156it [00:14, 10.49it/s]158it [00:14, 10.29it/s]160it [00:15, 10.38it/s]162it [00:15, 10.47it/s]164it [00:15, 10.44it/s]166it [00:15, 10.50it/s]168it [00:15, 10.42it/s]170it [00:16, 10.64it/s]172it [00:16, 10.35it/s]174it [00:16, 10.31it/s]176it [00:16, 10.40it/s]178it [00:16, 10.38it/s]180it [00:17, 10.48it/s]182it [00:17, 10.52it/s]184it [00:17, 10.67it/s]186it [00:17, 10.44it/s]188it [00:17, 10.12it/s]190it [00:18, 10.15it/s]192it [00:18, 10.34it/s]194it [00:18, 10.44it/s]196it [00:18, 10.51it/s]198it [00:18, 10.56it/s]200it [00:18, 10.62it/s]202it [00:19, 10.63it/s]204it [00:19, 10.59it/s]206it [00:19, 10.72it/s]208it [00:19, 10.63it/s]210it [00:19, 10.68it/s]212it [00:20, 10.82it/s]214it [00:20, 10.70it/s]216it [00:20, 10.78it/s]218it [00:20, 10.64it/s]220it [00:20, 10.50it/s]222it [00:21, 10.34it/s]224it [00:21, 10.35it/s]226it [00:21, 10.50it/s]228it [00:21, 10.60it/s]230it [00:21, 10.51it/s]232it [00:21, 10.50it/s]234it [00:22, 10.50it/s]236it [00:22, 10.48it/s]238it [00:22, 10.50it/s]240it [00:22, 10.68it/s]242it [00:22, 10.71it/s]244it [00:23, 10.47it/s]246it [00:23, 10.63it/s]248it [00:23, 10.62it/s]250it [00:23, 10.56it/s]252it [00:23, 10.70it/s]254it [00:24, 10.64it/s]256it [00:24, 10.58it/s]258it [00:24, 10.66it/s]260it [00:24, 10.68it/s]262it [00:24, 10.68it/s]264it [00:24, 10.54it/s]266it [00:25, 10.52it/s]268it [00:25, 10.64it/s]270it [00:25, 10.71it/s]272it [00:25, 10.58it/s]274it [00:25, 10.76it/s]276it [00:26, 10.67it/s]278it [00:26, 10.55it/s]280it [00:26, 10.76it/s]282it [00:26, 10.90it/s]284it [00:26, 10.63it/s]286it [00:27, 10.88it/s]288it [00:27, 10.70it/s]290it [00:27, 10.71it/s]292it [00:27, 10.82it/s]294it [00:27, 10.71it/s]296it [00:27, 10.65it/s]298it [00:28, 10.64it/s]300it [00:28, 10.74it/s]300it [00:28, 10.59it/s]
+INFO:ptsemseg:Iter 9000 Loss: 0.9540
+INFO:ptsemseg:Overall Acc: 	: 0.8292625845241386
+INFO:ptsemseg:Mean Acc : 	: 0.7480656681299669
+INFO:ptsemseg:FreqW Acc : 	: 0.7261486908630673
+INFO:ptsemseg:Mean IoU : 	: 0.6024423791892708
+INFO:ptsemseg:0: 0.5183951037062223
+INFO:ptsemseg:1: 0.7849942480087663
+INFO:ptsemseg:2: 0.5073967585385953
+INFO:ptsemseg:3: 0.7757147342078635
+INFO:ptsemseg:4: 0.4317671500220343
+INFO:ptsemseg:5: 0.7415085955508651
+INFO:ptsemseg:6: 0.4592473557708958
+INFO:ptsemseg:7: 0.8226029863977616
+INFO:ptsemseg:8: 0.6703140359045993
+INFO:ptsemseg:9: 0.6210347911941816
+INFO:ptsemseg:10: 0.3217102885208258
+INFO:ptsemseg:11: 0.047564008778346746
+INFO:ptsemseg:12: 0.8274481283481137
+INFO:ptsemseg:13: 0.3737605021492771
+INFO:ptsemseg:14: 0.19766740255407353
+INFO:ptsemseg:15: 0.5414828685310832
+INFO:ptsemseg:16: 0.7573531274542092
+INFO:ptsemseg:17: 0.9516574321924843
+INFO:ptsemseg:18: 0.5273186699410981
+INFO:ptsemseg:19: 0.6387279634330751
+INFO:ptsemseg:20: 0.6241184470025535
+INFO:ptsemseg:21: 0.9266997513221193
+INFO:ptsemseg:22: 0.7876903718241848
+INFO:ptsemseg:Iter [9100/20000]  Loss: 0.0365  Time/Image: 0.1162
+INFO:ptsemseg:Iter [9200/20000]  Loss: 0.0152  Time/Image: 0.1142
+INFO:ptsemseg:Iter [9300/20000]  Loss: 0.0260  Time/Image: 0.1166
+INFO:ptsemseg:Iter [9400/20000]  Loss: 0.1618  Time/Image: 0.1159
+INFO:ptsemseg:Iter [9500/20000]  Loss: 0.8867  Time/Image: 0.1141
+INFO:ptsemseg:Iter [9600/20000]  Loss: 0.2749  Time/Image: 0.1144
+INFO:ptsemseg:Iter [9700/20000]  Loss: 0.8544  Time/Image: 0.1164
+INFO:ptsemseg:Iter [9800/20000]  Loss: 0.0473  Time/Image: 0.1158
+INFO:ptsemseg:Iter [9900/20000]  Loss: 0.1793  Time/Image: 0.1154
+INFO:ptsemseg:Iter [10000/20000]  Loss: 0.3837  Time/Image: 0.1157
+Overall Acc: 	 0.8292625845241386
+Mean Acc : 	 0.7480656681299669
+FreqW Acc : 	 0.7261486908630673
+Mean IoU : 	 0.6024423791892708
+Iter [9100/20000]  Loss: 0.0365  Time/Image: 0.1162
+Iter [9200/20000]  Loss: 0.0152  Time/Image: 0.1142
+Iter [9300/20000]  Loss: 0.0260  Time/Image: 0.1166
+Iter [9400/20000]  Loss: 0.1618  Time/Image: 0.1159
+Iter [9500/20000]  Loss: 0.8867  Time/Image: 0.1141
+Iter [9600/20000]  Loss: 0.2749  Time/Image: 0.1144
+Iter [9700/20000]  Loss: 0.8544  Time/Image: 0.1164
+Iter [9800/20000]  Loss: 0.0473  Time/Image: 0.1158
+Iter [9900/20000]  Loss: 0.1793  Time/Image: 0.1154
+Iter [10000/20000]  Loss: 0.3837  Time/Image: 0.1157
+0it [00:00, ?it/s]1it [00:00,  9.11it/s]2it [00:00,  9.52it/s]3it [00:00,  6.29it/s]5it [00:00,  8.20it/s]7it [00:00,  9.20it/s]9it [00:01,  9.44it/s]10it [00:01,  9.55it/s]12it [00:01, 10.00it/s]14it [00:01, 10.30it/s]16it [00:01, 10.36it/s]18it [00:01, 10.43it/s]20it [00:02, 10.58it/s]22it [00:02, 10.60it/s]24it [00:02, 10.68it/s]26it [00:02, 10.62it/s]28it [00:02, 10.70it/s]30it [00:02, 10.72it/s]32it [00:03, 10.72it/s]34it [00:03, 10.84it/s]36it [00:03, 10.63it/s]38it [00:03, 10.49it/s]40it [00:03, 10.60it/s]42it [00:04, 10.66it/s]44it [00:04, 10.63it/s]46it [00:04, 10.81it/s]48it [00:04, 10.68it/s]50it [00:04, 10.62it/s]52it [00:05, 10.56it/s]54it [00:05, 10.63it/s]56it [00:05, 10.68it/s]58it [00:05, 10.70it/s]60it [00:05, 10.65it/s]62it [00:05, 10.59it/s]64it [00:06, 10.46it/s]66it [00:06, 10.34it/s]68it [00:06, 10.54it/s]70it [00:06, 10.63it/s]72it [00:06, 10.61it/s]74it [00:07, 10.66it/s]76it [00:07, 10.64it/s]78it [00:07, 10.48it/s]80it [00:07, 10.59it/s]82it [00:07, 10.67it/s]84it [00:08, 10.54it/s]86it [00:08, 10.63it/s]88it [00:08, 10.61it/s]90it [00:08, 10.63it/s]92it [00:08, 10.63it/s]94it [00:09, 10.43it/s]96it [00:09, 10.56it/s]98it [00:09, 10.69it/s]100it [00:09, 10.54it/s]102it [00:09, 10.57it/s]104it [00:09, 10.67it/s]106it [00:10, 10.42it/s]108it [00:10, 10.74it/s]110it [00:10, 10.62it/s]112it [00:10, 10.62it/s]114it [00:10, 10.71it/s]116it [00:11, 10.83it/s]118it [00:11, 10.74it/s]120it [00:11, 10.87it/s]122it [00:11, 10.80it/s]124it [00:11, 10.79it/s]126it [00:11, 10.76it/s]128it [00:12, 10.84it/s]130it [00:12, 10.81it/s]132it [00:12, 10.85it/s]134it [00:12, 10.72it/s]136it [00:12, 10.62it/s]138it [00:13, 10.48it/s]140it [00:13, 10.65it/s]142it [00:13, 10.74it/s]144it [00:13, 10.41it/s]146it [00:13, 10.57it/s]148it [00:14, 10.65it/s]150it [00:14, 10.78it/s]152it [00:14, 10.60it/s]154it [00:14, 10.53it/s]156it [00:14, 10.59it/s]158it [00:15, 10.30it/s]160it [00:15, 10.36it/s]162it [00:15, 10.41it/s]164it [00:15, 10.42it/s]166it [00:15, 10.09it/s]168it [00:16, 10.07it/s]170it [00:16, 10.26it/s]172it [00:16, 10.27it/s]174it [00:16, 10.57it/s]176it [00:16, 10.58it/s]178it [00:16, 10.51it/s]180it [00:17, 10.60it/s]182it [00:17, 10.55it/s]184it [00:17, 10.53it/s]186it [00:17, 10.63it/s]188it [00:17, 10.55it/s]190it [00:18, 10.34it/s]192it [00:18, 10.46it/s]194it [00:18, 10.57it/s]196it [00:18, 10.48it/s]198it [00:18, 10.56it/s]200it [00:19, 10.54it/s]202it [00:19, 10.53it/s]204it [00:19, 10.35it/s]206it [00:19, 10.60it/s]208it [00:19, 10.54it/s]210it [00:19, 10.57it/s]212it [00:20, 10.61it/s]214it [00:20, 10.28it/s]216it [00:20, 10.19it/s]218it [00:20, 10.41it/s]220it [00:20, 10.61it/s]222it [00:21, 10.60it/s]224it [00:21, 10.69it/s]226it [00:21, 10.76it/s]228it [00:21, 10.72it/s]230it [00:21, 10.75it/s]232it [00:22, 10.42it/s]234it [00:22, 10.55it/s]236it [00:22, 10.50it/s]238it [00:22, 10.38it/s]240it [00:22, 10.57it/s]242it [00:23, 10.48it/s]244it [00:23, 10.29it/s]246it [00:23, 10.49it/s]248it [00:23, 10.66it/s]250it [00:23, 10.42it/s]252it [00:23, 10.52it/s]254it [00:24, 10.77it/s]256it [00:24, 10.61it/s]258it [00:24, 10.57it/s]260it [00:24, 10.74it/s]262it [00:24, 10.60it/s]264it [00:25, 10.77it/s]266it [00:25, 10.81it/s]268it [00:25, 10.74it/s]270it [00:25, 10.76it/s]272it [00:25, 10.63it/s]274it [00:26, 10.75it/s]276it [00:26, 10.66it/s]278it [00:26, 10.52it/s]280it [00:26, 10.51it/s]282it [00:26, 10.64it/s]284it [00:26, 10.62it/s]286it [00:27, 10.66it/s]288it [00:27, 10.74it/s]290it [00:27, 10.36it/s]292it [00:27,  9.93it/s]293it [00:27,  9.83it/s]295it [00:28,  9.95it/s]297it [00:28, 10.44it/s]299it [00:28, 10.56it/s]300it [00:28, 10.52it/s]
+INFO:ptsemseg:Iter 10000 Loss: 0.9587
+INFO:ptsemseg:Overall Acc: 	: 0.8274615791452075
+INFO:ptsemseg:Mean Acc : 	: 0.7408211924617976
+INFO:ptsemseg:FreqW Acc : 	: 0.7256039607171766
+INFO:ptsemseg:Mean IoU : 	: 0.6079558464377822
+INFO:ptsemseg:0: 0.4599704477246279
+INFO:ptsemseg:1: 0.7292678615388453
+INFO:ptsemseg:2: 0.5183377852553683
+INFO:ptsemseg:3: 0.7617339549385743
+INFO:ptsemseg:4: 0.47907172773489975
+INFO:ptsemseg:5: 0.7438438816793359
+INFO:ptsemseg:6: 0.4390387408353602
+INFO:ptsemseg:7: 0.7992267049940283
+INFO:ptsemseg:8: 0.7048671467593742
+INFO:ptsemseg:9: 0.6536599934221055
+INFO:ptsemseg:10: 0.44507331738143446
+INFO:ptsemseg:11: 0.012051253728045951
+INFO:ptsemseg:12: 0.8282511168358188
+INFO:ptsemseg:13: 0.3251149943878337
+INFO:ptsemseg:14: 0.21865722205112412
+INFO:ptsemseg:15: 0.5498980383848302
+INFO:ptsemseg:16: 0.7413029125720525
+INFO:ptsemseg:17: 0.9450686595600915
+INFO:ptsemseg:18: 0.48696382834735924
+INFO:ptsemseg:19: 0.660726581087622
+INFO:ptsemseg:20: 0.7469605848302606
+INFO:ptsemseg:21: 0.9474212882582637
+INFO:ptsemseg:22: 0.7864764257617369
+Overall Acc: 	 0.8274615791452075
+Mean Acc : 	 0.7408211924617976
+FreqW Acc : 	 0.7256039607171766
+Mean IoU : 	 0.6079558464377822
+Traceback (most recent call last):
+  File "train.py", line 251, in <module>
+    train(cfg, writer, logger)
+  File "train.py", line 150, in train
+    optimizer.step()
+  File "/home/myid/das59179/pytorch-semseg/env/lib64/python3.8/site-packages/torch/optim/lr_scheduler.py", line 69, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/myid/das59179/pytorch-semseg/env/lib64/python3.8/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/myid/das59179/pytorch-semseg/env/lib64/python3.8/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/myid/das59179/pytorch-semseg/env/lib64/python3.8/site-packages/torch/optim/sgd.py", line 76, in step
+    sgd(params_with_grad,
+  File "/home/myid/das59179/pytorch-semseg/env/lib64/python3.8/site-packages/torch/optim/sgd.py", line 222, in sgd
+    func(params,
+  File "/home/myid/das59179/pytorch-semseg/env/lib64/python3.8/site-packages/torch/optim/sgd.py", line 325, in _multi_tensor_sgd
+    torch._foreach_add_(device_params, device_grads, alpha=-lr)
+RuntimeError: For non-complex input tensors, argument alpha must not be a complex number.
