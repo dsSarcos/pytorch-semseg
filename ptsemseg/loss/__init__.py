@@ -5,6 +5,7 @@ from ptsemseg.loss.loss import (
     cross_entropy2d,
     bootstrapped_cross_entropy2d,
     multi_scale_cross_entropy2d,
+    dpt_cross_entropy2d,
 )
 
 
@@ -14,10 +15,15 @@ key2loss = {
     "cross_entropy": cross_entropy2d,
     "bootstrapped_cross_entropy": bootstrapped_cross_entropy2d,
     "multi_scale_cross_entropy": multi_scale_cross_entropy2d,
+    'dpt_cross_entropy': dpt_cross_entropy2d,
 }
 
 
 def get_loss_function(cfg):
+    if cfg["training"]["loss"]["name"] == 'cross_entropy_1d':
+        import torch.nn as nn
+        return nn.functional.cross_entropy
+
     if cfg["training"]["loss"] is None:
         logger.info("Using default cross entropy loss")
         return cross_entropy2d

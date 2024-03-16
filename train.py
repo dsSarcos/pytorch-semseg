@@ -32,6 +32,7 @@ def train(cfg, writer, logger):
 
     # Setup device
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    #device = "cpu"
 
     # Setup Augmentations
     augmentations = cfg["training"].get("augmentations", None)
@@ -114,22 +115,40 @@ def train(cfg, writer, logger):
     i = start_iter
     flag = True
 
+    #from torchsummary import summary
+    #summary(model, (3, 500, 500))
+    #print(model)
+
     while i <= cfg["training"]["train_iters"] and flag:
         for (images, labels) in trainloader:
             i += 1
             start_ts = time.time()
-            scheduler.step()
+            #scheduler.step()
             model.train()
+
+            #print(model)
+
             images = images.to(device)
             labels = labels.to(device)
 
             optimizer.zero_grad()
             outputs = model(images)
 
-            loss = loss_fn(input=outputs, target=labels)
+            #if cfg['model']['arch'] == 'vgg16':
+            #    outputs = torch.nn.functional.softmax(outputs)
+
+                #print(outputs)
+                #print(labels)
+            
+            #print(labels.min(), labels.max())
+
+            #print(labels)
+
+            loss = loss_fn(input=outputs, target=labels) # ignore index is for DSM only
 
             loss.backward()
             optimizer.step()
+            #scheduler.step()
 
             time_meter.update(time.time() - start_ts)
 
@@ -146,10 +165,11 @@ def train(cfg, writer, logger):
                 logger.info(print_str)
                 writer.add_scalar("loss/train_loss", loss.item(), i + 1)
                 time_meter.reset()
-
+            
             if (i + 1) % cfg["training"]["val_interval"] == 0 or (i + 1) == cfg["training"][
                 "train_iters"
             ]:
+                scheduler.step()
                 model.eval()
                 with torch.no_grad():
                     for i_val, (images_val, labels_val) in tqdm(enumerate(valloader)):
@@ -160,6 +180,7 @@ def train(cfg, writer, logger):
                         val_loss = loss_fn(input=outputs, target=labels_val)
 
                         pred = outputs.data.max(1)[1].cpu().numpy()
+                        #pred = outputs.data.cpu().numpy()
                         gt = labels_val.data.cpu().numpy()
 
                         running_metrics_val.update(gt, pred)
@@ -195,6 +216,7 @@ def train(cfg, writer, logger):
                         "{}_{}_best_model.pkl".format(cfg["model"]["arch"], cfg["data"]["dataset"]),
                     )
                     torch.save(state, save_path)
+            
 
             if (i + 1) == cfg["training"]["train_iters"]:
                 flag = False
@@ -214,7 +236,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     with open(args.config) as fp:
-        cfg = yaml.load(fp)
+        cfg = yaml.safe_load(fp)
 
     run_id = random.randint(1, 100000)
     logdir = os.path.join("runs", os.path.basename(args.config)[:-4], str(run_id))

@@ -1,13 +1,16 @@
 import collections
 import torch
 import numpy as np
-import scipy.misc as m
+#import scipy.misc as m
+from skimage.io import imread
+from skimage.transform import resize as imresize
 
 from torch.utils import data
 
 from ptsemseg.utils import recursive_glob
 from ptsemseg.augmentations import Compose, RandomHorizontallyFlip, RandomRotate, Scale
 
+from torchvision.transforms import Compose, Normalize, Resize, ToTensor, ToPILImage
 
 class SUNRGBDLoader(data.Dataset):
     """SUNRGBD loader
@@ -39,10 +42,19 @@ class SUNRGBDLoader(data.Dataset):
         self.img_norm = img_norm
         self.test_mode = test_mode
         self.img_size = img_size if isinstance(img_size, tuple) else (img_size, img_size)
-        self.mean = np.array([104.00699, 116.66877, 122.67892])
+        self.mean = np.array([104.00699 / 255.0, 116.66877 / 255.0, 122.67892 / 255.0])
+        #self.std = np.array([255.0, 255.0, 255.0])
+        self.std = np.array([1., 1., 1.])
         self.files = collections.defaultdict(list)
         self.anno_files = collections.defaultdict(list)
         self.cmap = self.color_map(normalized=False)
+
+        self.transform = Compose([
+            ToPILImage(mode="RGB"),
+            Resize(img_size),
+            ToTensor(),
+            Normalize(self.mean, self.std)
+        ])
 
         split_map = {"training": "train", "val": "test"}
         self.split = split_map[split]
@@ -66,10 +78,10 @@ class SUNRGBDLoader(data.Dataset):
         # img_number = img_path.split('/')[-1]
         # lbl_path = os.path.join(self.root, 'annotations', img_number).replace('jpg', 'png')
 
-        img = m.imread(img_path)
+        img = imread(img_path)
         img = np.array(img, dtype=np.uint8)
 
-        lbl = m.imread(lbl_path)
+        lbl = imread(lbl_path)
         lbl = np.array(lbl, dtype=np.uint8)
 
         if not (len(img.shape) == 3 and len(lbl.shape) == 2):
@@ -79,31 +91,22 @@ class SUNRGBDLoader(data.Dataset):
             img, lbl = self.augmentations(img, lbl)
 
         if self.is_transform:
-            img, lbl = self.transform(img, lbl)
+            img = img[:,:,::-1] # RGB -> BGR
+            img = self.transform(img)
+            lbl = self.target_transform(lbl)
 
         return img, lbl
 
-    def transform(self, img, lbl):
-        img = m.imresize(img, (self.img_size[0], self.img_size[1]))  # uint8 with RGB mode
-        img = img[:, :, ::-1]  # RGB -> BGR
-        img = img.astype(np.float64)
-        img -= self.mean
-        if self.img_norm:
-            # Resize scales images from 0 to 255, thus we need
-            # to divide by 255.0
-            img = img.astype(float) / 255.0
-        # NHWC -> NCHW
-        img = img.transpose(2, 0, 1)
+    def target_transform(self, lbl):
 
         classes = np.unique(lbl)
         lbl = lbl.astype(float)
-        lbl = m.imresize(lbl, (self.img_size[0], self.img_size[1]), "nearest", mode="F")
+        lbl = imresize(lbl, (self.img_size[0], self.img_size[1]), order=0)
         lbl = lbl.astype(int)
         assert np.all(classes == np.unique(lbl))
 
-        img = torch.from_numpy(img).float()
         lbl = torch.from_numpy(lbl).long()
-        return img, lbl
+        return lbl
 
     def color_map(self, N=256, normalized=False):
         """
@@ -143,6 +146,7 @@ class SUNRGBDLoader(data.Dataset):
         rgb[:, :, 1] = g / 255.0
         rgb[:, :, 2] = b / 255.0
         return rgb
+
 
 
 if __name__ == "__main__":

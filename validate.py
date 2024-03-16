@@ -25,7 +25,7 @@ def validate(cfg, args):
 
     loader = data_loader(
         data_path,
-        split=cfg["data"]["val_split"],
+        split=cfg["data"]["train_split"],
         is_transform=True,
         img_size=(cfg["data"]["img_rows"], cfg["data"]["img_cols"]),
     )
@@ -44,6 +44,8 @@ def validate(cfg, args):
     model.to(device)
 
     for i, (images, labels) in enumerate(valloader):
+        if i >= 1:
+            break
         start_time = timeit.default_timer()
 
         images = images.to(device)
@@ -83,6 +85,22 @@ def validate(cfg, args):
 
     for i in range(n_classes):
         print(i, class_iou[i])
+
+    '''
+    import matplotlib.pyplot as plt
+    conf_matrix = running_metrics.confusion_matrix
+    fig, ax = plt.subplots()
+    ax.matshow(conf_matrix, cmap=plt.cm.Blues, alpha=0.5)
+    for i in range(conf_matrix.shape[0]):
+        for j in range(conf_matrix.shape[1]):
+            ax.text(x=j, y=i,s="{:0.2f}".format(conf_matrix[i,j]), va='center', ha='center', size='small')
+
+    
+    plt.xlabel('Predictions', fontsize=18)
+    plt.ylabel('Actuals', fontsize=18)
+    plt.title('Confusion Matrix', fontsize=18)
+    plt.show()
+    '''
 
 
 if __name__ == "__main__":
@@ -136,6 +154,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     with open(args.config) as fp:
-        cfg = yaml.load(fp)
+        cfg = yaml.safe_load(fp)
 
     validate(cfg, args)
